@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+</head>
+
+<body>
+    <fieldset>
+        <summary>Sum 2 digits</summary>
+        <input type="number" id="input1" placeholder="number 1"> + <input placeholder="number 2" type="number"
+            id="input2"> = <span id="result"></span>
+        <br><br>
+        <button onclick="sum()">Sum</button>
+        <button onclick="clearSum()">clear</button>
+        <script>
+            function sum() {
+                let input1 = document.getElementById('input1').value;
+                let input2 = document.getElementById('input2').value;
+                document.getElementById('result').innerText = Number(input1) + Number(input2);
+            }
+            function clearSum() {
+                document.getElementById('input1').value = '';
+                document.getElementById('input2').value = '';
+                document.getElementById('result').innerText = '';
+            }
+        </script>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>Create array to entered number</summary>
+        <input type="number" id="number" placeholder="enter any number "> <span id="errArray"
+            style="color: red;"></span>
+        <p>result: <span id="arrayCreate"></span></p>
+        <button onclick="createArray()">Create</button>
+        <button onclick="clear2()">clear</button>
+        <script>
+            function createArray() {
+                let errMessage = document.getElementById('errArray');
+                const length = document.getElementById('number').value;
+                if (length == '') {
+                    errMessage.innerText = 'Please enter number';
+                    return;
+                } else
+                    errMessage.innerText = '';
+
+                let array = [];
+                for (let i = 0; i < length; ++i) {
+                    array.push(i + 1);
+
+                    document.getElementById('arrayCreate').innerText = array;
+                }
+            }
+
+            function clear2() {
+                document.getElementById('number').value = '';
+                document.getElementById('arrayCreate').innerText = '';
+            }
+        </script>
+    </fieldset>
+    <br>
+    <fieldset>
+        <summary>List prime numbers to entered number</summary>
+        <input type="number" id="input3" placeholder="enter any number"> <span id="errPrimeMessage"
+            style="color: red;"></span> <br>
+        <p>result: <span id="primeNumbers"></span></p>
+        <button onclick="listPrimeNumbers()">Find</button>
+        <button onclick="clear3()">clear</button>
+        <script>
+            function listPrimeNumbers() {
+                const length = document.getElementById('input3').value;
+                if (document.getElementById('input3').value == '') {
+                    document.getElementById('errPrimeMessage').innerText = 'please enter number!';
+                    return;
+                }
+                else
+                    document.getElementById('errPrimeMessage').innerText = '';
+
+                let array = [1, 2];
+                for (let i = 3; i < length; ++i) {
+                    if (isPrime(i))
+                        array.push(i);
+                }
+                console.log(array)
+                document.getElementById('primeNumbers').innerText = array;
+            }
+            
+
+            function isPrime(number) {
+                for (let i = 2; i < number; i++) {
+                    if (number % i == 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            function clear3() {
+                document.getElementById('input3').value = '';
+                document.getElementById('primeNumbers').innerText = '';
+            }
+        </script>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>Sum even number from 0 -> 100</summary>
+        <p>result: <span id="resulTo100"></span></p>
+        <script>
+            let sumT = 0;
+
+            for (let i = 1; i < 100; ++i) {
+                sumT += Number(i);
+            }
+
+            document.getElementById('resulTo100').innerText = sumT;
+        </script>
+    </fieldset> <br>
+
+    <fieldset>
+        <summary>Call total even and odd</summary>
+        array <span id="array2"></span> <br><br>
+
+        sumTotalOdd: <span id="totalOdd"></span><br>
+        sumTotalEven: <span id="totalEven"></span><br>
+        <button onclick="callTotal()">Sum</button>
+        <button onclick="reset5()">reset</button>
+        <script>
+            array2 = [];
+            function generateArray() {
+                array2 = []
+                for (let i = 0; i < 15; ++i)
+                    array2.push(Math.floor(Math.random() * 100));
+                document.getElementById('array2').innerText = array2;
+                document.getElementById('totalOdd').innerText = '';
+                document.getElementById('totalEven').innerText = '';
+            }
+            generateArray();
+
+            function callTotal() {
+                let sumOdd = 0;
+                let sumEven = 0;
+                for (let i = 0; i < array2.length; ++i) {
+                    if (array2[i] % 2 == 0)
+                        sumEven += array2[i];
+                    else
+                        sumOdd += array2[i];
+                }
+                document.getElementById('totalOdd').innerText = sumOdd;
+                document.getElementById('totalEven').innerText = sumEven;
+            }
+
+            function reset5() {
+                generateArray();
+            }
+
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <summary>validate email</summary>
+        <input type="text" id="email" placeholder="enter email"> <span id="errMessage" style="color: red;"></span>
+        <br><br>
+        <button onclick="validateEmail()">validate</button>
+
+        <script>
+            function validateEmail() {
+                let email = document.getElementById('email').value;
+                let err = document.getElementById('errMessage')
+                if (email.length <= 0)
+                    err.innerText = 'Email is required';
+                else
+                    if (email.match(/\w+@\w+\.\w+/) == null) {
+                        err.innerText = 'Email invalid!';
+                    }
+                    else {
+                        err.innerText = '';
+                        alert('Email valid!')
+                    }
+
+            }
+        </script>
+    </fieldset>
+
+    <style>
+        span{
+            word-wrap: break-word;
+        }
+    </style>
+</body>
+
+</html>

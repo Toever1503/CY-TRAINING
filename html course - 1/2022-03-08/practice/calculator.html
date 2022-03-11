@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <table align="center" border="1">
+        <caption>
+            <h1>Calculator</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th colspan="4"><input value="0" type="number" id="result"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td onclick="clearCalculator()">C</td>
+                <td onclick="deleteNumber()">X</td>
+            </tr>
+            <tr>
+                <td class="number">7</td>
+                <td class="number">8</td>
+                <td class="number">9</td>
+                <td onclick="divide()">/</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="number">5</td>
+                <td class="number">6</td>
+                <td onclick="multiple()">x</td>
+            </tr>
+            <tr>
+                <td class="number">1</td>
+                <td class="number">2</td>
+                <td class="number">3</td>
+                <td onclick="subtract()">-</td>
+            </tr>
+            <tr>
+                <td class="number">0</td>
+                <td class="number">.</td>
+                <td onclick="result()">=</td>
+                <td onclick="sum()">+</td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        input {
+            width: 99%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        table {
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+        }
+
+        table thead tr th {
+            height: 25px;
+            position: relative;
+        }
+
+        table tbody td {
+            text-align: center;
+            cursor: pointer;
+            border: 5px solid gainsboro;
+            box-shadow: inset 1px 1px 3px 0px;
+            background-color: #7bdda5;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        table tbody td:hover {
+            background-color: aqua;
+        }
+    </style>
+
+    <script>
+        var input1 = '0';
+        var input2 = '0';
+        var operator = null;
+        var hasClickOperator = false;
+        
+        document.querySelectorAll('.number').forEach(number => {
+            number.addEventListener('click', function (e) {
+                if (hasClickOperator == true) {
+                    if (input2 == '0')
+                        input2 = '';
+                    input2 += e.target.innerText;
+                    refeshAfterClick(input2);
+                }
+                else {
+                    if (input1 == '0')
+                        input1 = '';
+                    input1 += e.target.innerText;
+                    refeshAfterClick(input1);
+                }
+
+            });
+        });
+
+        function divide() {
+            operator = '/';
+            hasClickOperator = true;
+            refeshAfterClick('0');
+        }
+
+        function multiple() {
+            operator = '*';
+            hasClickOperator = true;
+            refeshAfterClick('0');
+        }
+        function sum() {
+            operator = '+';
+            hasClickOperator = true;
+            refeshAfterClick('0');
+        }
+        function subtract() {
+            operator = '-';
+            hasClickOperator = true;
+            refeshAfterClick('0');
+        }
+
+        function deleteNumber() {
+            if (hasClickOperator) {
+                if (input2.length == 1) {
+                    input2 = '0';
+                    refeshAfterClick(input2);
+                }
+                else {
+                    let lastNumber = Number(input2.length-1);
+
+                    input2 = input2.slice(1, lastNumber);
+                    refeshAfterClick(input2);
+                }
+            }
+            else {
+                if (input1.length == 1) {
+                    input1 = '0';
+                    refeshAfterClick(input1);
+                }
+                else {
+                    let lastNumber = Number(input1.length-1);
+                    input1 = input1.slice(0, lastNumber);
+                    refeshAfterClick(input1);
+                }
+            }
+        }
+
+        function result() {
+            if (hasClickOperator) {
+                let result;
+                switch (operator) {
+                    case '+':
+                        result = Number(input1) + Number(input2);
+                        refeshAfterClick(result);
+                        refreshOperator();
+                        break;
+                    case '-':
+                        result = Number(input1) - Number(input2);
+                        refeshAfterClick(result);
+                        refreshOperator();
+                        break;
+                    case '*':
+                        result = Number(input1) * Number(input2);
+                        refeshAfterClick(result);
+                        refreshOperator();
+                        break;
+                    case '/':
+                        result = Number(input1) / Number(input2);
+                        refeshAfterClick(result);
+                        refreshOperator();
+                        break;
+                }
+            }
+        }
+
+        function refreshOperator() {
+            input1 = document.getElementById('result').value;
+            input2 = '0';
+            hasClickOperator = false;
+            operator = null;
+        }
+
+        function clearCalculator() {
+            console.log('ef')
+            refreshOperator();
+            input1 = '0';
+            refeshAfterClick(input1);
+        }
+
+        function refeshAfterClick(input) {
+            document.querySelector('#result').value = Number(input);
+        }
+    </script>
+
+</body>
+
+</html>

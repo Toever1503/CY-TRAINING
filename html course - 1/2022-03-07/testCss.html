@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/testCss.css">
+</head>
+<body>
+    <b>style</b>
+    <h3 style="color: red;">This is inline css</h3>
+    <h4>This is external css</h4>
+    <h5>This is internal css</h5>
+    <hr>
+    <br>
+
+    <b>margin - padding</b>
+    <div style="border: 5px solid black;">
+        <div id="margin">Margin</div>
+    </div>
+    <hr>
+    <br>
+
+    <b>block</b>
+    <div id="inline">
+        <summary>inline</summary>
+        <span>block 1</span>
+        <span>block 2</span>
+        <span>block 3</span>
+        <span>block 4</span>
+        <span>block 5</span>
+    </div>
+
+    <hr><br>
+    <div id="inline-block">
+        <summary>inline-block</summary>
+        <span>block 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque quod laudantium vero.</span>
+        <span>block 2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, alias eligendi quam, eveniet delectus cumque labore commodi est obcaecati totam unde ipsam iste omnis. Voluptatum aut a perspiciatis porro quisquam.</span>
+        <span>block 3</span>
+        <span>block 4 nnnnnnnnnnnnnnnnnnnnn</span>
+        <span>block 5</span>
+
+        <style>
+            #inline-block{
+                display: inline-block
+            }
+        </style>
+    </div>
+
+    <hr>
+    <br>
+
+    <div id="block">
+        <summary>block</summary>
+        <div>block 1</div>
+        <div>block 2</div>
+        <div>block 3</div>
+        <div>block 4</div>
+        <div>block 5</div>
+        <style>
+            #block {
+                /* display: block; */
+            }
+        </style>
+    </div>
+    <hr><br>
+    
+
+    <div class="content">
+        <div class="box"></div>
+        <style>
+            .content{
+                width: 500px;
+                height: 500px;
+                background: blue;
+                position: relative;
+            }
+            .box{
+                background: red;
+                position: absolute;
+                top: 0;
+                left: 10%;
+                width: 100px;
+                height: 100px;
+                margin-top: 10px;
+            }
+
+        </style>
+    </div>
+
+</body>
+<style>
+    div>span{
+        background-color: aqua;
+    }
+
+    #margin {
+        border: 2px solid greenyellow;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    h5{
+        /* border: 10em dotted gray; */
+        color: aqua;
+    }
+</style>
+</html>

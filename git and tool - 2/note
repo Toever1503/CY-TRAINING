@@ -1,0 +1,56 @@
+#2022-03-10
+    - intellji ide
+        + shortcut
+    - naming convention
+    - Git
+        + concept:
+            -> git centralize
+            -> git distribution
+        + ide
+            -> cli
+            -> gui (github desktop, ...)
+        + git syntax:
+            -> git init (init project)
+            -> git add (add file to stage)
+            -> git commit (save snapshot)
+            -> git checkout <commit id> (move to specific commit)
+            -> git log (check commit log) (keyboard for navigate
+                                            . W next page
+                                            . space prev page
+                                            . return next line
+                                            . arrow down, up line)
+                                        (opt
+                                        . --grep <keyword> (search log))
+        + Process: create project -> init repo -> add file to stage -> commit -> return at add file to stage -> check commit log
+        + remote syntax:
+            -> git remote add <link repo>
+            -> git remote -v <check current remote>
+            -> git push <repo name><repo branch>
+            -> git fetch (get repo from remote)
+            -> git pull (synchronize with local)
+            -> git clone 
+        + Process: clone repo (create repo in case not clone) -> modify repo -> add cwd into stage -> commit -> return modify repo -> check commit log
+        + Branch:
+            + git branch (opt:
+                . -r (list curremt brances on repo)
+                . -D <branch name> (delete branch)                ))
+            + git checkout <branch name>  (move between branch)
+                -> <branch name> (create branch)
+                -> <branch name> -b (create branch and move to it)
+        + Merge:
+            -> non-Fast-Forward
+            -> Fast-Forward
+        + solve conflict:
+        + revert 
+            -> get reset <opt soft, hard, mixed, keep> <commit id>
+            -> git clean -df <remove all after use hard opt)
+        + Cherry pick:
+            -> git cherry-pick ( opt:
+                . continue <commit id> (continue get specific)
+                . quite <commit id> (?)
+                . abort <commit id> (ignore))
+        + pull request( review code before merge);
+        + squash (combine multi commit into 1)
+            -> git rebase 
+        
+        question? file in stage, how add to cwd

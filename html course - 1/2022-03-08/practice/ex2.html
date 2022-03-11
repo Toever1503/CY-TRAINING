@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <summary>Get value checkbox</summary>
+        <label for="">This is checkbox</label>
+        <input type="checkbox" id="checkbox" value="This is check box">
+        <br>
+        result: <span style="color: red;" id="resultCkbox"></span><br>
+        <button onclick="getValueCkbox()">Get value</button>
+        <script>
+            function getValueCkbox() {
+                document.getElementById('resultCkbox').innerHTML = document.getElementById('checkbox').value;
+            }
+        </script>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>On change checkbox</summary>
+        <label for="">This is checkbox</label>
+
+        <script>
+            function onchangeCkbox() {
+                document.getElementById('onchangeCkbox').innerText = document.getElementById('chkboxChange').checked == false ? 'uncheck' : 'checked';
+            }
+        </script>
+        <input type="checkbox" id="chkboxChange" onchange="onchangeCkbox()">
+        <br>
+        result: <span id="onchangeCkbox" style="color: red;">uncheck</span>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>Get value of 2 radio buttons</summary>
+        <label for="">Female</label>
+        <input type="radio" value="female" name="sex" onchange="radioChange(this)">
+
+        <label for="">Male</label>
+        <input type="radio" value="male" onchange="radioChange(this)" name="sex" id="">
+        <br>
+        Value:
+        <span style="color: red;" id="valueRadio"></span>
+        <script>
+            function radioChange(e) {
+                document.getElementById('valueRadio').innerText = e.value;
+            }
+        </script>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>Current date</summary>
+        Date now: <input type="datetime" name="" id="dateNow">
+        <script>
+            document.getElementById('dateNow').value = new Date().toLocaleString();
+        </script>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>Hide, Show content</summary>
+        <span id="textContent" style="color: rgb(0, 139, 63);">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus debitis impedit ipsam commodi eveniet,
+            inventore nisi veritatis rerum soluta voluptates et blanditiis, id sequi quo explicabo iusto sint, vero
+            odit.
+        </span><br>
+        <button onclick="showContent()">Show</button>
+        <button onclick="hideContent()">Hide</button>
+
+        <script>
+            function showContent() {
+                document.getElementById('textContent').style.display = 'block';
+            }
+
+            function hideContent() {
+                document.getElementById('textContent').style.display = 'none';
+            }
+        </script>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>Random any numbers from 0 -> 100</summary>
+        Number random: <span style="color: red;" id="numberRandom"></span>
+        <br>
+        <button onclick="randomNumber()">Random</button>
+        <script>
+
+            function randomNumber() {
+                document.getElementById('numberRandom').innerText = Math.floor(Math.random() * 100);
+            }
+        </script>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary>find smallest and biggest number</summary>
+        Array: <span id="arrayRandom"></span>
+        <br>
+        Smalest number: <span style="color: red;" id="smalestNumber"></span>
+        <br>
+        Biggest number: <span style="color: red;" id="biggestNumber"></span>
+        <br>
+        <button onclick="findNumber()">find</button>
+        <button onclick="refresh()">reset</button>
+        <script>
+
+            array2 = [];
+            function generateArray() {
+                array2 = []
+                for (let i = 0; i < 15; ++i)
+                    array2.push(Math.floor(Math.random() * 100));
+                document.getElementById('arrayRandom').innerText = array2;
+                document.getElementById('smalestNumber').innerText = '';
+                document.getElementById('biggestNumber').innerText = '';
+            }
+            generateArray();
+
+            function findNumber() {
+                let smalestN = 999;
+                let biggestN = -999;
+
+                for (let i = 1; i < array2.length; ++i) {
+                    if (array2[i] > biggestN)
+                        biggestN = array2[i];
+
+                    if (array2[i] < smalestN)
+                        smalestN = array2[i];
+                }
+                document.getElementById('smalestNumber').innerText = smalestN;
+                document.getElementById('biggestNumber').innerText = biggestN;
+            }
+
+            function refresh() {
+                generateArray();
+            }
+        </script>
+    </fieldset>
+</body>
+
+</html>

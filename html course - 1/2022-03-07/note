@@ -1,0 +1,25 @@
+#html tag
+    - <em>
+    - <fieldset>
+    - <abbr> // abreviation text
+    - <wbr> break line
+    - <kbd> define keyboard input
+    - <pre> preformat exactly with written code
+    - <samp> define sample out from computer
+    - <details> define infor which use can open or close
+        <summary> // summary text
+        text
+
+#html attribute
+    ***IMPORTANT
+        -draggable attribute
+            + ondrop
+            + ondragover
+            + ondragstart
+    - hidden // hide tag
+
+#form
+    button:type(type of button in form)
+
+
+#cascading style sheets - css

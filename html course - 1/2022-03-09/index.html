@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <div class="content" style="width: 500px; height: 500px;">
+            <img src="https://image-ie.s3.eu-west-1.amazonaws.com/uploads/2022/03/08121413/FW22-Street-Milan_0234-scaled.jpg"
+                alt="">
+        </div>
+        <script>
+            function toggleImg() {
+                $('.content img').fadeToggle();
+            }
+            function fadeIn() {
+                $('.content img').fadeIn();
+            }
+            function fadeOut() {
+                $('.content img').fadeOut();
+            }
+            function fadeTo() {
+                $('.content img').fadeTo("fast", Math.random());
+            }
+
+        </script>
+        <button onclick="toggleImg()">Toggle</button>
+        <button onclick="fadeIn()">Fade in</button>
+        <button onclick="fadeOut()">Fade out</button>
+        <button onclick="fadeTo()">Fade to</button>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <summary><b>slide</b></summary>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+        <div id="slide">
+            eos id aliquam dicta quos minima debitis nisi quam nemo magnam, beatae qui alias quisquam omnis facilis
+            ipsam ullam quia consectetur!
+        </div>
+        <br>
+
+        <button onclick="slideToggle1()">Toggle</button>
+        <button onclick="slideUp()">Slide up</button>
+        <button onclick="slideDown()">Slide down</button>
+
+        <script>
+            function slideUp() {
+                $('#slide').slideUp();
+            }
+            function slideDown() {
+                $('#slide').slideDown();
+            }
+
+            function slideToggle1() {
+                $('#slide').slideToggle();
+            }
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <summary><b>Add, reomove class</b></summary>
+        <div class="textContent">
+            <p class="12  214 124 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+                eos id aliquam dicta quos minima debitis nisi quam nemo magnam, beatae qui alias quisquam omnis facilis
+                ipsam ullam quia consectetur!</p>
+        </div>
+        <style>
+            .colorRed {
+                color: red;
+            }
+        </style>
+
+        <button onclick="addClass()">Red</button>
+        <button onclick="removeClass()">Clear</button>
+        <button onclick="toggleClass()">Toggle class</button>
+        <script>
+            function addClass() {
+                $('.textContent p').addClass('colorRed');
+            }
+            function removeClass() {
+                $('.textContent p').removeClass('colorRed');
+            }
+            function toggleClass() {
+                $('.textContent p').toggleClass('colorRed');
+            }
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <summary><b>Browser event</b></summary>
+        current size:
+        <span id="widthBrowser"></span>px &
+        <span id="heighBrowser"></span>px
+        <br>
+        <script>
+            $(window).resize(function (e) {
+                console.log(e)
+                $('#widthBrowser').text(window.innerWidth);
+                $('#heighBrowser').text(window.innerHeight);
+            });
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <summary><b>focus</b></summary>
+        <input type="text" name="" id="inputFocus">
+        <br>
+        <button onclick="focusInput()">focus</button>
+
+        <script>
+            function focusInput() {
+                $('#inputFocus').blur();
+            }
+
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <summary><b>Form Event</b></summary>
+
+        <form id="formEvent">
+            <div>
+                <label for="">Username</label>
+                <input type="text" name="username" id="username">
+                <span class="errMessage"></span>
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" id="password">
+                <span class="errMessage"></span>
+            </div>
+
+            <span id="formError"></span>
+            <button>Submit</button>
+        </form>
+        <style>
+            #formEvent>div {
+                margin: 10px 0;
+            }
+
+            #formEvent label {
+                display: inline-block;
+                width: 100px;
+            }
+
+            .errMessage {
+                color: red;
+            }
+        </style>
+
+        <script>
+            $('#username').keyup(function (e) {
+                if ($(this).val().length < 5) {
+                    $(this).next().text('Username must be 5 characters').css({
+                        'color': 'red'
+                    });
+                }
+                else
+                    $(this).css({
+                        'border': '2px solid green'
+                    }).next().text('Valid').css({ 'color': 'green' });
+                
+            });
+
+
+            $('#formEvent').submit((e) => {
+                e.preventDefault();
+                $('#password').val().length < 5 ? $('#password').next().text('Password must be 5 characters').css({
+                    'color': 'red'
+                }) : $('#password').next().text('Valid').css({ 'color': 'green' });
+            });
+        </script>
+
+    </fieldset>
+
+    <fieldset>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+        <div class="fixedElement">
+            This is fixed tag
+        </div>
+        <style>
+            .fixedElement{
+                background: red;
+                position: fixed;
+                width: 500px;
+                height: 500px;
+            }
+        </style>
+    </fieldset>
+</body>
+
+</html>

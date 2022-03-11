@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shoping</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/index.js"></script>
+</head>
+
+<body class="position-relative">
+    <header style="height: 60px; background-color: darkturquoise;">
+        <nav class="navbar navbar-expand-sm navbar-dark container h-100">
+            <div class="logo col-3 h-100 bg-white">
+                <img src="https://pngimg.com/uploads/renault/renault_PNG38.png" alt="">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offset-2 collapse navbar-collapse h-100" id="collapsibleNavbar">
+                <ul id="mainMenu" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Account</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="text" placeholder="Enter title product...">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mainBody" style="background-color: seashell;">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://imgaz1.chiccdn.com/os/202202/20220221234136_155.jpg" alt="Los Angeles"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://imgaz1.chiccdn.com/nc/myos_newchic_affiliate_activity/202202/20220221214735_229.jpg"
+                        alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://imgaz1.chiccdn.com/os/202202/20220222003716_232.jpg" alt="New York"
+                        class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div>
+            <div class="text-center mt-2"><b style="font-size: 25px; color: darkturquoise;">Recommend for you</b></div>
+            <div class="listProducts p-4">
+                <div class="listItems row">
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/view/oaupload/newchic/images/E2/AA/8271a425-7a69-4386-99b8-68d8e5a4cb6f.jpg.webp?s=360x480"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Solid Color Loose Irregular
+                                Shirt ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/view/oaupload/newchic/images/80/D0/aed3566f-cffc-4fff-aaea-ece9a5e1313f.jpg.webp?s=360x480"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Solid Color Loose Irregular
+                                Shirt ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow-sm">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/E4/9A/8d21fb67-35a2-4d38-a69f-8a463ee81474.jpg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Solid Lace Button V-neck Blouse
+                                ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/view/oaupload/newchic/images/19/8B/53ae43c9-fa60-4672-88fd-dbc2f3b38675.jpg.webp?s=360x480"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Solid Pocket Maxi Shirt ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/EF/9C/2f37a919-8a74-452a-9683-2c43949f5fdd.jpg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Paisley Ethnic Pattern Black
+                                Kimono ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/view/oaupload/newchic/images/BD/54/c2ffde86-59d6-4a54-bae0-71a2c7381e8c.jpg.webp?s=360x480"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Solid Pocket Maxi Shirt ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/B4/D5/8e98a18f-b845-46ec-a1fa-f1013623eb5f.jpeg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Denim Contrast Stitching Kimono
+                                ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/B1/AF/03eb62e1-df83-4324-b064-379b84464fb2.jpg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Solid Pocket Maxi Shirt ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/36/29/4dd53689-86d3-4400-90b6-f1283b703412.jpg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Mens Waffle Loungewear Set ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/B0/B8/7a73b63b-d167-49c8-96fb-bc70f3a56b53.jpg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Holiday Stripe Co-ords For ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/DD/DF/7d140c1a-b890-42e7-addb-dd1cf5624c33.jpg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Contrast Patchwork Hooded Sports
+                                C ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                    <div class="card col-2 p-1 shadow">
+                        <img class="card-img-top"
+                            src="https://imgaz1.chiccdn.com/thumb/wap/oaupload/newchic/images/AA/50/d0b25bf7-3263-4f4d-898a-9a952fe17864.jpg.webp?s=240x320"
+                            alt="">
+                        <div class="card-body p-0">
+                            <div class="card-text text-center" style="font-size: 12px;">Anime Elements Rectangular Neckl
+                                ...
+                            </div>
+                            <div class="price w-100">
+                                <strike class="float-left">$777</strike>
+                                <b class="text-danger" style="float: right;">$599</b>
+                            </div>
+                        </div>
+                        <div class="card-footer w-100">
+                            <div class="btn btn btn-outline-primary">Buy Now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-30" style=" width: 200px; margin: 0 auto;">
+                    <ul class="pagination m-auto mt-4">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailProduct" style="background: #00000029; display: none;">
+        <div class="productInfor col-8 offset-2 row">
+            <div class="productInfoLeft col-5 p-3 shadow h-100">
+                <img src="https://imgaz1.chiccdn.com/thumb/view/oaupload/newchic/images/DA/9E/707a04e4-865b-4f08-baf9-5d7ac23d1c28.jpg.webp?s=360x480"
+                    alt="">
+            </div>
+            <div class="productInfoRight col-7 p-3">
+                <h3 class="text-center mt-3">
+                    Button Lapel Solid Casual Shirt
+                </h3>
+                <div class="price">
+                    <strike>$777</strike>
+                    <b class="text-danger">$599</b>
+                </div>
+                <div>
+                    <p><b>COLOR:</b></p>
+                    <span class="badge bg-primary">Primary</span>
+                    <span class="badge bg-secondary">Secondary</span>
+                    <span class="badge bg-success">Green</span>
+                </div>
+
+                <div>
+                    <p><b>Desciption:</b></p>
+                    <table class="table table-striped border">
+                        <tbody>
+                            <tr>
+                                <td>Color:</td>
+                                <td>Red</td>
+                            </tr>
+                            <tr>
+                                <td>Material:</td>
+                                <td>Polyester</td>
+                            </tr>
+                            <tr>
+                                <td>Occasion:</td>
+                                <td>Occasion</td>
+                            </tr>
+                            <tr>
+                                <td>Style:</td>
+                                <td>Occasion</td>
+                            </tr>
+                            <tr>
+                                <td>Sleeves Length:</td>
+                                <td>Long Sleeve </td>
+                            </tr>
+                            <tr>
+                                <td>Collar:</td>
+                                <td>V-neck </td>
+                            </tr>
+                            <tr>
+                                <td>Season:</td>
+                                <td>Spring </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="action">
+                    <button class="btn btn-outline-primary">Buy Now</button>
+                    <button class="btn btn-outline-primary">Add to your Cart</button>
+                </div>
+            </div>
+            <button id="closeBtn" class="btn-outline-primary btn-close" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <footer style="background-color: #0dcaf0;">
+        <h3 class="text-center p-2" style="color: cornsilk ;">Powered by CY</h3>
+    </footer>
+</body>
+
+</html>

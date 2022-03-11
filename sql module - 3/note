@@ -1,0 +1,34 @@
+#dại cương về HQT CSDL
+    - Introduce
+    - manage file
+    - pros & 
+    - cons:
+        + easy loop data
+        + miss consistent
+        + hard access
+        + limit share data
+        + hard cover
+    - service per database
+        + monolithic
+        + microservices
+            . ocelot api gateway
+    - practice mysql basic
+        + create table, column
+        + query
+        + drop
+        + insert
+    - feature
+        + tinh doc lap
+        + truu tuong hoa du lieu
+            . mo hinh du lieu
+        + consistent
+    - user 
+        + admin
+        + degigner
+        + end user
+    
+    - ex:
+        + delete parent, child auto delete by parent
+        + tranh chap du lieu
+        + research springboot & hibernate
+        
