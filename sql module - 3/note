@@ -1,34 +1,116 @@
-#dại cương về HQT CSDL
-    - Introduce
-    - manage file
-    - pros & 
-    - cons:
-        + easy loop data
-        + miss consistent
-        + hard access
-        + limit share data
-        + hard cover
-    - service per database
-        + monolithic
-        + microservices
-            . ocelot api gateway
-    - practice mysql basic
-        + create table, column
-        + query
-        + drop
-        + insert
-    - feature
-        + tinh doc lap
-        + truu tuong hoa du lieu
-            . mo hinh du lieu
-        + consistent
-    - user 
-        + admin
-        + degigner
-        + end user
-    
-    - ex:
-        + delete parent, child auto delete by parent
-        + tranh chap du lieu
-        + research springboot & hibernate
+#2022-03-11
+    #dại cương về HQT CSDL
+        - Introduce
+        - manage file
+        - pros & 
+        - cons:
+            + easy loop data
+            + miss consistent
+            + hard access
+            + limit share data
+            + hard cover
+        - service per database
+            + monolithic
+            + microservices
+                . ocelot api gateway
+        - practice mysql basic
+            + create table, column
+            + query
+            + drop
+            + insert
+        - feature
+            + tinh doc lap
+            + truu tuong hoa du lieu
+                . mo hinh du lieu
+            + consistent
+        - user 
+            + admin
+            + degigner
+            + end user
         
+        - ex:
+            + delete parent, child auto delete by parent
+            + tranh chap du lieu
+            + research springboot & hibernate
+            
+#2022-03-14
+    - orm, hibernate
+    - tool phan tich
+        + visual paradigm
+    - client/server structure
+        + ?modelView, viewModel
+        - must read:
+            + webserver
+            + sync 2 database (primary database & backup database) {replication}
+            + ocelot api gateways
+            + grpc concept
+            + binary tree(-> balance tree)
+    - mo hinh du lieu
+        ->{
+            .phan cap
+                .> easy build and manipulation
+            .networking
+                .> pros: simply; co the bieu dien ngu nghia voi kieu ban ghi va kieu moc noi; truy van thong qua phep duyet do thi(navigation)
+                .> cons: soluong contro nhieu; han che bieu dien ngu nghia
+            .dulieu quan he
+                .> concept:
+                    . thuoc tinh
+                    . quan he
+                    . bo gia tri
+                    . khoa
+                    .  cac phep toan
+                .> cons: dua tren ly thuyet tap hop, kha nang toi uu
+                .> pros: cau truc du lieu khong linh hoat, han che trong bieu dien ngu nghia
+            .du lieu thuc the-lien ket(entity-relational data model)
+                .>
+            .du lieu huong doi tuong
+                .> 
+                .> cons: cau truc phuc tap va su dung nhieu con tro, kha nang toi uu hoa cac xu ly bi han che trong nhieu th; kkha nang toi uu hoa bi han che trong nhieu th
+                .> pros
+            }
+    - ly thuyet thiet ke co so du lieu quan he
+        + uml diagram
+        + process:
+            + baitoan -> mo hinh er -> mo hinh csdl qh-> dbms
+            +er:
+            -> tap thuc the, thuoc tinh, loai gia tri
+            -> moi quan he
+            ->
+        + what's khoa? ****
+    - chuyen er -> mhqh
+
+#2022-03-15
+    - luu y
+        + han che join
+    -  cac phep ket noi
+    ques:
+        + cac bo la gi?
+        + chuan sql 96
+
+    # - hd:
+    #     +hanh chinh
+    #     +to chuc dao tao
+    #     +diem thi
+    - tool:
+        + https://drawsql.app/
+    # - ASS: Design management database for CY
+    #     -> Start
+    #         -> Entity
+    #             .> department
+    #             .> teacher
+    #             .> trainee
+    #             .> staff
+    #             .> pointtable
+
+#2022-03-16
+    - Concept: 
+        + Stored procedure
+            . keyword:
+                .>delimiter
+        + logical
+        + trigger
+            .> ass
+                . create table house (id, rentId, name, update_rent)
+                . create trigger relation one-many with rent, after update rentx`
+        + functional 
+        + mysql transaction
