@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Demo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc541f3b-2e10-4daf-b2f7-0a9cad976364" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaJDBC/src/main/java/com/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaJDBC/src/main/java/com/jdbc/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/artifacts/Lap2_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/artifacts/Lap2_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/Lap2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/src/main/java/com/lap2/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/src/main/java/com/lap2/asfa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/src/main/webapp/WEB-INF/view/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/Lap2-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/Lap2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/Lap2-1.0-SNAPSHOT/WEB-INF/classes/com/lap2/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/Lap2-1.0-SNAPSHOT/WEB-INF/classes/com/lap2/asfa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/Lap2-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/Lap2-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/classes/com/lap2/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lap2/target/classes/com/lap2/asfa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice_13h/practice_13h.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice_13h/src/com/controller/MainProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice_13h/src/com/dao/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice_13h/src/com/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice_13h/src/com/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice_13h/src/com/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practice_13h/src/com/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/DemoUtil1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Toyota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/IShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/BackendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/EmployeeI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/FrontendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/IACTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Landline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/practice/Ass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_18/generic/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/io/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/io/IoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/finalJavaModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/CopyFileProgram/CopyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/DownloadProgram/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/StudentManagement/Management.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/StudentManagement/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Learning Detail.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Learning Detail.xlsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26lbHFiwaMiC7gv9Q9kWJLMpS9H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3954023" />
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.60">
+    <configuration name="Tomcat 10.0.18" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.18" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Demo:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Demo_war" />
+          </settings>
+        </artifact>
+        <artifact name="Demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Demo_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a9e21b06-686a-414a-9d12-a026084c7e12" />
+        <option name="HTTP_PORT" value="8080" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61370" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Demo:war" />
+          <artifact name="Demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <deployment>
+        <artifact name="Demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Demo_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="5f3ab69c-2bfc-41e5-ae92-a9f38d8a81dd" />
+        <option name="HTTP_PORT" value="8081" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54358" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 10.0.18" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc541f3b-2e10-4daf-b2f7-0a9cad976364" name="Changes" comment="" />
+      <created>1648001033120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648001033120</updated>
+      <workItem from="1648001034684" duration="2163000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

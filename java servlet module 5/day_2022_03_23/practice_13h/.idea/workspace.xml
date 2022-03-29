@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="practice_13h:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc7677c1-9c56-4a61-903e-c4378fbdc5b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/src/main/java/com/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Demo/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/JavaJDBC/src/main/java/com/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/JavaJDBC/src/main/java/com/jdbc/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/artifacts/Lap2_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/artifacts/Lap2_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/Lap2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/src/main/java/com/lap2/GetinPutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/src/main/java/com/lap2/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/src/main/webapp/view/test-part.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/src/main/webapp/view/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/target/Lap2-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/target/Lap2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/target/Lap2-1.0-SNAPSHOT/WEB-INF/classes/com/lap2/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/target/Lap2-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/Lap2/target/classes/com/lap2/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/practice_13h/practice_13h.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/practice_13h/src/com/controller/MainProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/practice_13h/src/com/dao/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/practice_13h/src/com/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/practice_13h/src/com/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/practice_13h/src/com/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day_2022_03_22/practice_13h/src/com/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NguyenVanHau.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demoVM/src/main/java/com/demovm/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/.jsdtscope" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/site/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/site/HomPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/site/UserAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/IDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/LogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/filter/ProductManagementFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/util/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/util/Func.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/AddProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/ProductDetail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/ProductManagement.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/UpdateProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/homePage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/DemoUtil1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Toyota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/IShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/BackendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/EmployeeI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/FrontendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/IACTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Landline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/practice/Ass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_18/generic/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/io/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/io/IoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/finalJavaModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/CopyFileProgram/CopyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/DownloadProgram/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/StudentManagement/Management.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/StudentManagement/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Learning Detail.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Learning Detail.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../html course - 1/2022-03-09/assignment/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../html course - 1/2022-03-09/assignment/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../html course - 1/2022-03-09/assignment/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../html course - 1/2022-03-09/assignment/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/controller/ProductController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26lvkX9g90GsLL4FwpCee5YIrQ0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3954023" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\haunv\Desktop\CY TRAINING\java servlet module 5\day_2022_03_23\practice_13h\src\main\webapp\WEB-INF\lib" />
+      <recent name="C:\Users\haunv\Desktop\CY TRAINING\java servlet module 5\day_2022_03_23\practice_13h\src\main\webapp\static\css" />
+      <recent name="C:\Users\haunv\Desktop\CY TRAINING\java servlet module 5\day_2022_03_23\practice_13h\src\main\webapp\static\js" />
+      <recent name="C:\Users\haunv\Desktop\CY TRAINING\java servlet module 5\day_2022_03_23\practice_13h\src\main\webapp" />
+      <recent name="C:\Users\haunv\Desktop\CY TRAINING\java servlet module 5\day_2022_03_23\practice_13h\src\main\webapp\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\haunv\Desktop\CY TRAINING\java servlet module 5\day_2022_03_23\practice_13h\src\main\webapp\view" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.60">
+    <configuration name="Func" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.util.Func" />
+      <module name="practice_13h" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dao.ProductDao" />
+      <module name="practice_13h" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="practice_13h:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/practice_13h" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="74866fe4-3fe3-4523-b974-387f88def3fa" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61583" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="practice_13h:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="aws.lambda" factoryName="Local">
+      <option name="credentialProviderId" />
+      <option name="regionId" />
+      <option name="debugHost" value="localhost" />
+      <option name="architecture" />
+      <option name="environmentVariables">
+        <map />
+      </option>
+      <option name="handler" />
+      <option name="image" value="false" />
+      <option name="logicalFunctionName" />
+      <option name="memorySize" value="128" />
+      <option name="pathMappings">
+        <list />
+      </option>
+      <option name="platform" />
+      <option name="runtime" />
+      <option name="templateFile" />
+      <option name="timeout" value="300" />
+      <option name="useTemplate" value="false" />
+      <option name="input" />
+      <option name="inputIsFile" value="false" />
+      <sam>
+        <option name="additionalBuildArgs" />
+        <option name="additionalLocalArgs" />
+        <option name="buildInContainer" value="false" />
+        <option name="dockerNetwork" />
+        <option name="skipImagePull" value="false" />
+      </sam>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.ProductDao" />
+      <item itemvalue="Application.Func" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProductDao" />
+        <item itemvalue="Application.Func" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc7677c1-9c56-4a61-903e-c4378fbdc5b5" name="Changes" comment="" />
+      <created>1648011134018</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648011134018</updated>
+      <workItem from="1648011135353" duration="13132000" />
+      <workItem from="1648027665141" duration="596000" />
+      <workItem from="1648086095052" duration="1270000" />
+      <workItem from="1648087769982" duration="20168000" />
+      <workItem from="1648142372158" duration="3877000" />
+      <workItem from="1648171745000" duration="17272000" />
+      <workItem from="1648195328201" duration="7784000" />
+      <workItem from="1648391471862" duration="366000" />
+      <workItem from="1648393341633" duration="230000" />
+      <workItem from="1648429527719" duration="45000" />
+      <workItem from="1648441012848" duration="3682000" />
+      <workItem from="1648455385274" duration="42000" />
+      <workItem from="1648458674415" duration="461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

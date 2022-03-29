@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2b104f1b-5eb1-4153-8ee7-b7028a9650fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../java servlet module 5/day_2022_03_22/JavaJDBC/src/main/java/com/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java servlet module 5/day_2022_03_22/JavaJDBC/src/main/java/com/jdbc/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java servlet module 5/day_2022_03_22/practice_13h/src/com/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java servlet module 5/day_2022_03_22/practice_13h/src/com/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/DemoUtil1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Toyota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/IShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/BackendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/EmployeeI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/FrontendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/IACTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Landline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_17/practice/Ass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_18/generic/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_21/io/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_21/io/IoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalJavaModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CopyFileProgram/CopyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DownloadProgram/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentManagement/Management.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentManagement/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning Detail.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Learning Detail.xlsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26ge7ecHkM7iowULH2DOjfHcrjq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Application.Management">
+    <configuration name="CopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CopyFileProgram.CopyFile" />
+      <module name="finalJavaModule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CopyFileProgram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Download" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DownloadProgram.Download" />
+      <module name="finalJavaModule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DownloadProgram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Management" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StudentManagement.Management" />
+      <module name="finalJavaModule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StudentManagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Management" />
+        <item itemvalue="Application.CopyFile" />
+        <item itemvalue="Application.Download" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b104f1b-5eb1-4153-8ee7-b7028a9650fa" name="Changes" comment="" />
+      <created>1647849492500</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647849492500</updated>
+      <workItem from="1647849494118" duration="7510000" />
+      <workItem from="1647928079944" duration="666000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

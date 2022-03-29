@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bfaf569-4c88-4ac4-8b08-c98baed4dec3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/DemoUtil1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/Toyota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/shape/IShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/work/BackendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/work/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/work/EmployeeI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/classes/work/FrontendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/day_2022_03_17/classes/IACTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/day_2022_03_17/classes/Landline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/day_2022_03_17/classes/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/day_2022_03_17/classes/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/day_2022_03_17/classes/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_17/practice/Ass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_18/generic/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_21/io/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_21/io/IoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_21/pratice/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_21/pratice/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_21/thread/main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/day_2022_03_21/thread/main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/finalJavaModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/src/CopyFileProgram/CopyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/src/DownloadProgram/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/src/StudentManagement/Management.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../finalJavaModule/src/StudentManagement/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Learning Detail.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Learning Detail.xlsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26UiiL7iE1aV0hJKMbA0c9WXKNQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RunManager" selected="Application.Menu">
+    <configuration name="Ass1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day_2022_03_17.practice.Ass1" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.day_2022_03_17.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day_2022_03_21.io.IoMain" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.day_2022_03_21.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day_2022_03_21.pratice.Menu" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.day_2022_03_21.pratice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day_2022_03_17.day_2022_03_17.classes.Util" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.day_2022_03_17.day_2022_03_17.classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day_2022_03_21.thread.main2" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.day_2022_03_21.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Ass1" />
+      <item itemvalue="Application.Util" />
+      <item itemvalue="Application.main2" />
+      <item itemvalue="Application.IoMain" />
+      <item itemvalue="Application.Menu" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Menu" />
+        <item itemvalue="Application.IoMain" />
+        <item itemvalue="Application.main2" />
+        <item itemvalue="Application.Util" />
+        <item itemvalue="Application.Ass1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bfaf569-4c88-4ac4-8b08-c98baed4dec3" name="Changes" comment="" />
+      <created>1647484697564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647484697564</updated>
+      <workItem from="1647484699349" duration="14673000" />
+      <workItem from="1647564270327" duration="6026000" />
+      <workItem from="1647826373713" duration="16723000" />
+      <workItem from="1647849870918" duration="623000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
