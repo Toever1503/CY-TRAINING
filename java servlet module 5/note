@@ -1,0 +1,30 @@
+#suggestion
+    + before begin module, please particularly explain difference between 'web app servlet' 'and web app spring mvc'
+    
+
+#2022-03-22
+    - java sql introduce
+    - jdbc concept, synctax
+    - practice
+
+#2022-03-23
+        - client & server introduce
+            + request, respone
+            + http code
+        - servlet concept
+        - jsp
+            + 10 implicit object
+            + jsp tag
+        - pratice 
+#2022-03-24
+    + How to create 1 servlet
+    + structure web app
+    + web xml config
+    + jsp expression tag
+    + filter & session
+#2022-03-25
+    + review knowlege from day begin to now
+    + practice session, upload file, cart
+#2022-03-28
+    + review scope, filter, cookies & jstl custom tag
+    + final exam module

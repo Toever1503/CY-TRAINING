@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2643646b-2b6e-42e1-aa5b-3b5f349a129f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/DemoUtil1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/Toyota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/IShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/shape/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/BackendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/EmployeeI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/classes/work/FrontendDevelopment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/IACTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Landline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Smartphone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/day_2022_03_17/classes/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_17/practice/Ass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_18/generic/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/io/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/io/IoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/pratice/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/2022-03-17 practice/practice/src/com/day_2022_03_21/thread/main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/azure/azureSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/finalJavaModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/CopyFileProgram/CopyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/DownloadProgram/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/StudentManagement/Management.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../javacore module - 4/finalJavaModule/src/StudentManagement/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Learning Detail.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Learning Detail.xlsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26imL7GZ4rftph7qXCKcmmjllEg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Maven.JavaServlet">
+    <configuration name="JavaServlet" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <method v="2" />
+    </configuration>
+    <configuration name="Java web in Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="f85b4f79-d798-4134-884d-7a91a8d7dad0" />
+                    <id>f85b4f79-d798-4134-884d-7a91a8d7dad0</id>
+                  </TransportTarget>
+                </option>
+                <option name="watchedLocalPath" value="" />
+                <watched-path />
+                <name>CONTEXT_XML</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="f85b4f79-d798-4134-884d-7a91a8d7dad0" />
+                    <id>f85b4f79-d798-4134-884d-7a91a8d7dad0</id>
+                  </TransportTarget>
+                </transport-target>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <option name="stagingRemotePath" value="" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="b1fe38e4-3f8a-44f0-abff-774f6112a2c0" />
+                    <id>b1fe38e4-3f8a-44f0-abff-774f6112a2c0</id>
+                  </TransportTarget>
+                </option>
+                <staging-path />
+                <name>STAGING</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="b1fe38e4-3f8a-44f0-abff-774f6112a2c0" />
+                    <id>b1fe38e4-3f8a-44f0-abff-774f6112a2c0</id>
+                  </TransportTarget>
+                </transport-target>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49267" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="d7639f87-7818-487e-8303-2d5810c01fd4" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59129" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.JavaServlet" />
+      <item itemvalue="Tomcat Server.Java web in Tomcat" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2643646b-2b6e-42e1-aa5b-3b5f349a129f" name="Changes" comment="" />
+      <created>1647914725387</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647914725387</updated>
+      <workItem from="1647914730118" duration="1252000" />
+      <workItem from="1647915999379" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
