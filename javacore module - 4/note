@@ -1,0 +1,33 @@
+#2022-03-17 
+    . 4 feature of java
+    . package diagram
+    . design pattern:
+        . event pattern
+    . R & S:
+        . difference between interface & abstract
+    . practice
+    . class diagram
+
+#2022-03-18
+    . review practice yesterday
+    . design software rule
+        .reuse code
+        .divide & package module
+        .arconym: solid
+
+    . design pattern:
+        . repository pattern
+        . cqrs pattern
+    . generic 
+
+#2022-03-21
+    - thread concept & practice
+    - io concep & practice
+    - java 8
+    - in module (
+        + usecase
+        + sequence
+        + class diagram
+        + entity diagram
+        + activity diagram)
+    - 
