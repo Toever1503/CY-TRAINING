@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="testHibernate:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>testHibernate</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="testHibernate-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="testHibernate:war exploded" />
+    </root>
+  </artifact>
+</component>

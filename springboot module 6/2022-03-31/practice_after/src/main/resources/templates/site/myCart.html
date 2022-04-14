@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/site/layout/component :: head}"/>
+<body>
+<header th:replace="/site/layout/component :: header" />
+
+<div class="mainBody container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Cart</li>
+        </ol>
+    </nav>
+    <div class="cart_content">
+        <p class="bg-success text-white d-inline" th:text="${message}" />
+        <table class="table table-hover table-bordered text-center">
+            <thead style="background: azure;">
+            <tr>
+                <th></th>
+                <th>
+                    <span class="title">Product name</span>
+                </th>
+                <th>
+                    <span class="price">Price</span>
+                </th>
+                <th>
+                    <span class="quantity">Quantity</span>
+                </th>
+                <th>
+                    <span>Action</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${session.cart}">
+                <td>
+                    <span class="image" style="height: 130px; width: 100px; display: block;margin: 0 auto;"><img th:src="${item.getValue().Product.Image}" height="30px" width="30px" alt=""></span>
+                </td>
+                <td>
+                    <span class="title" th:text="${item.getValue().Product.Name}"></span>
+                </td>
+                <td>
+                    <span class="price" th:text="|${item.getValue().Product.Price}$|"></span>
+                </td>
+                <td>
+                    <span class="quantity" th:text="${item.getValue().Quantity}"></span>
+                </td>
+                <td>
+                    <a th:href="|/my-cart/delete/${item.getValue().Product.Id}|" class="btn btn-outline-primary">Delete</a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<footer th:replace="/site/layout/component :: footer" />
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/component/component :: head" />
+<body>
+<div th:replace="/component/component :: JQueryToast"/>
+<header th:replace="/component/component :: site_header" />
+
+<div class="mainBody container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Cart</li>
+        </ol>
+    </nav>
+    <div class="cart_content">
+        <p class="bg-success text-white d-inline" th:text="${message}" />
+        <table class="table table-hover table-bordered text-center">
+            <h3 class="bg-warning text-white text-bold m-1 d-inline-block" th:if="${myOrders.getContent().size == 0}" >You haven't order any product!</h3>
+            <thead style="background: azure;">
+            <tr>
+                <th>
+                    <span class="title">Order Id</span>
+                </th>
+                <th>
+                    <span class="price">Total Price</span>
+                </th>
+                <th>
+                    <span class="quantity">Total Quantity</span>
+                </th>
+                <th>
+                    <span>Status</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${myOrders.getContent()}">
+                <td>
+                    <span class="title" th:text="${item.id}"></span>
+                </td>
+                <td>
+                    <span class="price" th:text="|${item.totalPrice}$|"></span>
+                </td>
+                <td>
+                    <span class="quantity" th:text="${item.totalQuantity}"></span>
+                </td>
+                <td>
+                    <span class="status text-bold">Pending</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="page m-auto mt-3">
+            <ul class="pagination">
+                <li class="page-item" th:if="${!myOrders.isFirst()}"><a class="page-link"
+                                                                        th:href="${'?page='+ (myOrders.getNumber()-1)}">Previous</a>
+                </li>
+                <li th:class="|page-item ${pageIndex == myOrders.getNumber() ? 'active' : ''}|"
+                    th:each="pageIndex : ${#numbers.sequence( 0, __${myOrders.getTotalPages()-1}__)}"><a
+                        class="page-link" th:href="|?page=${pageIndex}|" th:text="${pageIndex+1}"></a></li>
+                <li class="page-item" th:if="${!myOrders.isLast()}"><a class="page-link"
+                                                                       th:href="${'?page='+(myOrders.getNumber()+1)}">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<footer th:replace="/component/component :: footer" />
+</body>
+</html>

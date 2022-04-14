@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/component :: head"/>
+<body style="background-color: snow; ">
+<div th:replace="/component :: JQueryToast"/>
+<header class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark container">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/subjects/registration">Subject Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/subjects/registration/my-registration">My Registered Subject</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/subjects/my-points">Subject Point</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="main-content container p-5">
+    <div class="main-content_title p-2 mt-3 bg-white">
+        <h3>Point Dashboard</h3>
+        <a class="btn btn-primary" href="/subjects/my-points/export">Export Point</a>
+    </div>
+    <div class="list-availsubect bg-white p-2">
+        <table class="table table-hover table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Subject Id</th>
+                <th>Subject Name</th>
+                <th>Point Type</th>
+                <th>Point</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr th:each="item : ${studentPoints}">
+                    <td>
+                        <span th:text="|#${item.registeredSubject.availSubject.subject.id}|"/>
+                    </td>
+                    <td>
+                        <span th:text="${item.registeredSubject.availSubject.subject.subjectName}"/>
+                    </td>
+                    <td>
+                        <span th:text="${item.pointType == null ? 'NULL' : item.pointType}"/>
+                    </td>
+                    <td>
+                        <span th:text="${item.point == null ? 'NULL' : item.point}"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="page">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" th:if="${!studentPoints.isFirst()}"
+                                         th:href="|?page=${studentPoints.getNumber()-1}|">Previous</a></li>
+                <li th:if="${!studentPoints.isFirst()}" th:class="|page-item ${index == studentPoints.getNumber() ? 'actice' : ''}|"
+                    th:each="index : ${#numbers.sequence(1, studentPoints.getTotalPages())}"><a class="page-link"
+                                                                                                th:href="|?page=index|">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" th:if="${!studentPoints.isLast()}"
+                                         th:href="|?page=${studentPoints.getNumber()+1}|">Next</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

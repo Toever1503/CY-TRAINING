@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/site/layout/component :: head}"/>
+<body>
+<header th:replace="/site/layout/component :: header" />
+
+<div class="mainBody container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item">Category</li>
+            <li class="breadcrumb-item active" aria-current="page" th:text="${pageTitle}"></li>
+        </ol>
+    </nav>
+    <p class="text-white bg-warning" th:if="${listProducts.size == 0 }">Not found any product!</p>
+    <div class="listProducts p-4" th:if="${listProducts.size != 0 }">
+        <div class="listItems row">
+            <div class="card col-2 p-1 shadow" th:each="product: ${listProducts}">
+                <img class="card-img-top" data-id="${product.getId()}"
+                     th:src="${product.getImage()}"
+                     alt="">
+                <div class="card-body p-0">
+                    <div class="card-text text-center" style="font-size: 12px;" th:text="${product.getName()}"/>
+                    <div class="price container row">
+                        <div class="price_infor col-10">
+                            <strike class="col-6" th:text="|${product.getOldPrice()}$|"/>
+                            <b class="text-danger col-6" style="float: right;" th:text="|${product.getPrice()}$|"/>
+                        </div>
+                        <a th:href="${'/practice_13h/my-cart/add?id='+ product.getId()}" class="col-2"
+                           data-bs-toggle="tooltip" title="Add to cart!"><i class="fa fa-cart-plus"
+                                                                            aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <a class="btn btn-outline-primary" th:href="|/my-cart/add/${product.Id}?redirect=|">Add</a>
+            </div>
+        </div>
+    </div>
+    <ul class="pagination">
+        <li class="page-item" th:if="${page > 0}"><a class="page-link" th:href="${'?page='+ (page-1)}">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#" th:text="${page}"></a></li>
+        <li class="page-item" th:if="${listProducts.size != 0 && listProducts.size != 1}" ><a class="page-link" th:href="${'?page='+(page+1)}">Next</a></li>
+    </ul>
+
+</div>
+
+
+<footer th:replace="/site/layout/component :: footer" />
+</body>
+</html>

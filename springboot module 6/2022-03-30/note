@@ -1,3 +1,11 @@
 - thymeleaf concept
 - thymeleaf syntax
+    + loop
+    + if
+    + display text
+- access:
+    + el
+    + spel
+    + ognl
 - thymeleaf tag
+- pratice

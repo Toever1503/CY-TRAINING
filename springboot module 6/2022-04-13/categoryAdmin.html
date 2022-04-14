@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
+
+    <!-- Latest compiled JavaScript -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <div class='header-content container'>
+            <nav class='navbar navbar-expand-sm bottomHeader nav-dark pt-0'>
+                <div class='container-fluid'>
+                    <a class='navbar-brand' href='javascript:void(0)'><img
+                            src='https://bizweb.sapocdn.net/100/438/408/themes/857207/assets/logo.svg?1649813331353'
+                            alt=''></a>
+                    <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#mynavbar'>
+                        <span class='navbar-toggler-icon'></span>
+                    </button>
+                    <div class='collapse navbar-collapse' id='mynavbar'>
+                        <ul class='navbar-nav me-auto'>
+                            <li class='nav-item position-relative'>
+                                <a class='nav-link' href='javascript:void(0)'>Product</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <style>
+        header ul.nav.topHeader {
+            font-size: 11px;
+        }
+
+        header ul li .subMenu-main {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background-color: #00000014;
+            z-index: 9999;
+        }
+
+        header ul li:hover .subMenu-main {
+            display: block;
+        }
+
+        header .subMenu-main .subMenu-main-content {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            gap: 0 5px;
+            height: 300px;
+            background-color: white
+        }
+
+        header .subMenuContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px 15px;
+            padding: 10px
+        }
+
+        header .subMenuContainer>div {
+            width: 30%;
+        }
+    </style>
+    <div class='main-body container'>
+        <div class="breadCrumbBox">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Admin</li>
+                    <li class="breadcrumb-item active" aria-current="page">Product</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-outline-primary p-2 m-2 createNew" data-bs-toggle="modal"
+            data-bs-target="#createUpdate">
+            Create new
+        </button>
+        <table class='table table:hover table-bordered text-center categoryList'>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category Parent</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="keep">
+                </tr>
+            </tbody>
+
+            <script>
+                function getCategories(page, size = 6) {
+                    fetch(`http://localhost:8080/api/categories?size=${size}&page=${page}&sort=id,desc`)
+                        .then(res => res.json())
+                        .then(res => {
+                            const { content } = res;
+                            console.log(res)
+                            if (res.empty == false) {
+                                jQuery('.categoryList .catItem').remove();
+                                content.map(category => {
+                                    const { id, catName, catParent } = category;
+                                    jQuery(`
+                                <tr class='catItem'>
+                                    <td>
+                                        <span>#${id}</span>
+                                    </td>
+                                    <td>
+                                        <span>${catName}</span>
+                                    </td>
+                                    <td>
+                                        <span>${catParent != null ? catParent.catName : 'Not Have'}</span>
+                                    </td>
+                                    <td data-id="${id}">
+                                        <button class="btn btn-outline-primary p-1" onclick="editCategory(${id})" >Edit</button>
+                                        <button class="btn btn-outline-danger p-1" onclick="deleteCategory(this,${id})">Delete</button>
+                                    </td>
+                                </tr>
+                                `).hide().insertBefore('.categoryList .keep').show(1000);
+                                });
+                                jQuery('#paginationItem ul').remove();
+                                const pageUlTag = jQuery(`
+                                <ul class="pagination">
+                                </ul>`);
+                                if (!res.first)
+                                    jQuery(`<li class="page-item"><a class="page-link" data-page="${res.number - 1}" href="#">Previous</a></li>`).appendTo(pageUlTag);
+                                for (let i = 0; i < res.totalPages; ++i) {
+                                    jQuery(`<li class="page-item ${i == res.number ? 'active' : ''}"><a class="page-link" data-page="${i}" href="#">${i + 1}</a></li>`).appendTo(pageUlTag);
+                                }
+                                if (!res.last)
+                                    jQuery(`<li class="page-item"><a class="page-link" data-page="${res.number + 1}" href="#">Next</a></li>`).appendTo(pageUlTag);
+                                pageUlTag.appendTo('#paginationItem');
+                                jQuery('#paginationItem ul li').on('click', (e => {
+                                    getCategories(e.target.dataset.page);
+                                }));
+                            }
+                        }).catch(err => console.log(err));
+                };
+                getCategories(0);
+
+                function fillSelectCategory() {
+                    jQuery(`#modalProductAction select[name="catParent"] option.opt`).remove();
+                    fetch('http://localhost:8080/api/categories/parentNull')
+                        .then(res => res.json())
+                        .then(res => {
+                            const { content } = res;
+                            console.log(content);
+                            content.map(category => {
+                                const { id, catName } = category;
+                                jQuery(`
+                                     <option class='opt' value="${id}">${catName}</option>
+                                `).appendTo(`#modalProductAction select[name="catParent"]`);
+                            });
+                        }).catch(err => console.log(err));
+                }
+                
+
+                function editCategory(id) {
+                    fetch('http://localhost:8080/api/categories/' + id)
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+                            jQuery('#modalProductAction input[name="id"]').val(data.id);
+                            jQuery('#modalProductAction input[name="catName"]').val(data.catName);
+                            jQuery('#modalProductAction select[name="catParent"]').val(data.catParent != null ? data.catParent.id : '1');
+                            jQuery('#createUpdate .modal-title').text('Edit Category');
+                            jQuery('#createUpdate button.submitBtn').text('Edit');
+                           
+                            fillSelectCategory();
+                            jQuery('#createUpdate').modal('show');
+
+                        }).catch(err => console.log(err));
+                }
+                function deleteCategory(e, id) {
+                    console.log(e)
+                    let check = confirm('Are you sure?');
+                    if (check) {
+                        fetch('http://localhost:8080/api/categories/' + id, {
+                            method: 'DELETE'
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                if (data == true) {
+                                    e.parentElement.parentElement.remove();
+                                }
+                            }).catch(err => console.log(err));
+                    }
+                }
+                jQuery('.createNew').click(() => {
+                    jQuery('#createUpdate .modal-title').text('Create Category');
+                    jQuery('#createUpdate button.submitBtn').text('Create');
+                    jQuery('#createUpdate form')[0].reset();
+                    fillSelectCategory();
+                });
+
+            </script>
+        </table>
+        <div id="paginationItem">
+
+        </div>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="createUpdate">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Create Category</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <form id="modalProductAction">
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <input type="text" class="form-control d-none" id="id" name="id">
+                        <div class="mb-3 mt-3">
+                            <label for="title" class="form-label">Name:</label>
+                            <input type="text" class="form-control" required id="title"
+                                placeholder="Enter category name" name="catName">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="category" class="form-label">Category Parent:</label>
+                            <select name="catParent" class="form-control">
+                                <option value="">None</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary submitBtn">Create</button>
+                        <button type=" button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </form>
+                <script>
+                    jQuery('#modalProductAction').submit(function (e) {
+                        e.preventDefault();
+                        let form = jQuery(this);
+                        let formData = {
+                            id: jQuery('#modalProductAction input[name="id"]').val(),
+                            catName: jQuery('#modalProductAction input[name="catName"]').val(),
+                            catParent: jQuery('#modalProductAction select[name="catParent"]').val()
+                        };
+
+                        const type = jQuery('#modalProductAction #id').val() != '' ? true : false;
+                        url = 'http://localhost:8080/api/categories' + (type ? '/' + jQuery('#id').val() : '');
+
+                        console.log(formData);
+
+                        fetch(url, {
+                            method: type ? 'put' : 'post',
+                            body: JSON.stringify(formData),
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        }).then(res => res.json())
+                            .then(data => {
+                                console.log(data)
+                                if (data != null) {
+                                    jQuery('#createUpdate').modal('hide');
+                                    getCategories(0);
+                                }
+                            }).catch(err => console.log(err));
+
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

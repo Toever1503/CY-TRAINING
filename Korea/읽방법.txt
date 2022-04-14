@@ -1,0 +1,8 @@
+- ㄱ, ㅋ, ㄲ, ㄳ, ㄺ=> ㄱ
+ +보기: 학: hak, 엌: op, 밖: bak, 밝: bak  
+
+- ㄷ, ㄸ, ㅌ, ㅅ, ㅆ, ㅈ, ㅊ, ㅎ => ㄷ
+ +보기: 믿: mit, 밑: mit , 핫: hat, 밭: bat, 좋: chot
+
+- ㄹ, ㄴ => ㄴ (ㄹ->ㄴ when it place end of sentence)
+ +보기: 발: bal, 달: tal, 닐: nal 

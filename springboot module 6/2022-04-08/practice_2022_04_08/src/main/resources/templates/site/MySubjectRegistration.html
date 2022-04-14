@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/component :: head"/>
+<body style="background-color: snow; ">
+<div th:replace="/component :: JQueryToast"/>
+<header class="bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark container">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/subjects/registration">Subject Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/subjects/registration/my-registration">My Registered Subject</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/subjects/my-points">Subject Point</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="main-content container p-5">
+    <div class="main-content_title p-2 mt-3 bg-white">
+        <h3>Available Subjects</h3>
+    </div>
+    <p class="mb-2 p-2 bg-warning" th:if="${registeredSubjects.getTotalElements() == 0}">You don't have registered any subject!</p>
+    <div class="list-availsubect bg-white p-2">
+        <table class="table table-hover table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Registered Id</th>
+                <th>Subject Name</th>
+                <th>Subject Start Date</th>
+                <th>Subject Start Time</th>
+                <th>Registered Time</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr th:each="item: ${registeredSubjects}">
+                    <td>
+                        <span th:text="|#${item.id}|"/>
+                    </td>
+                    <td>
+                        <span th:text="${item.availSubject.subject.subjectName}"/>
+                    </td>
+                    <td>
+                        <span th:text="${item.availSubject.startDate}"/>
+                    </td>
+                    <td>
+                        <span th:text="${item.availSubject.startTime}"/>
+                    </td>
+                    <td>
+                        <span th:text="${item.registeredTime}"/>
+                    </td>
+                    <td>
+                        <span th:class="|badge bg-${item.status == true ? 'primary':'danger'}|" th:text="${item.status == true ? 'Đăng ký thành công!' : 'Đã hủy!'}" />
+                    </td>
+                    <td>
+                        <a  th:if="${item.status == true}" th:href="|/subjects/registration/cancel/${item.id}|" class="btn btn-outline-primary">Cancel</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="page">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" th:if="${!registeredSubjects.isFirst()}" th:href="|?page=${registeredSubjects.getNumber()-1}|">Previous</a></li>
+                <li th:if="${!registeredSubjects.isFirst()}" th:class="|page-item ${index == registeredSubjects.getNumber() ? 'actice' : ''}|" th:each="index : ${#numbers.sequence(1, registeredSubjects.getTotalPages())}"><a class="page-link" th:href="|?page=index|">1</a></li>
+                <li class="page-item"><a class="page-link" th:if="${!registeredSubjects.isLast()}" th:href="|?page=${registeredSubjects.getNumber()+1}|">Next</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

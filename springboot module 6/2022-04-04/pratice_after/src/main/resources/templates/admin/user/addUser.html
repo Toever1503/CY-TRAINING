@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/admin/layout/component :: head"/>
+<body>
+<div th:replace="/component/JQueryToast :: JQueryToast"/>
+<form class="container p-3" th:action="@{/admin/users}" method="post" th:object="${user}">
+    <h1 class="text-center">Add User</h1>
+    <div class="input-group mb-2">
+        <label class="input-group-text" for="username">Username</label>
+        <input type="text" class="form-control" placeholder="enter username..." id="username" th:field="*{Username}">
+    </div>
+
+    <div class="input-group mb-2">
+        <label class="input-group-text" for="password">Password</label>
+        <input type="password" class="form-control" placeholder="enter password..." id="password" th:field="*{Password}">
+    </div>
+
+    <div class="input-group mb-2">
+        <label class="input-group-text" for="role">Role</label>
+        <select class="form-control" id="role" value="0" th:field="*{Role}" >
+            <option value="0">USER</option>
+            <option value="1">ADMIN</option>
+        </select>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Add</button>
+        <a href="/admin/users" class="btn btn-secondary">Back</a>
+    </div>
+</form>
+</body>
+</html>

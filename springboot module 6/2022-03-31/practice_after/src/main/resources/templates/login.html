@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/admin/layout/component :: head"/>
+<body>
+<form th:object="${user}" method="post" class="p-3 mt-3 m-auto border" style="width: 500px;">
+    <h1 class="text-center">Login</h1>
+    <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" th:field="*{Username}" placeholder="Enter username" required>
+    </div>
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" th:field="*{Password}" placeholder="Enter password"
+               required>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+</form>
+</body>
+</html>

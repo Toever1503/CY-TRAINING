@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="http://localhost:8080/practice_13h/static/css/style.css">
+
     <script src="http://localhost:8080/practice_13h/static/js/index.js"></script>
 </head>
 

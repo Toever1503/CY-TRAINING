@@ -1,0 +1,7 @@
+- pratice all day
+1.	Xây 2 trang quản trị và trang người dùng quản sản phẩm(id , nam , type , image , price , createTime,createByUser, số lượng, status ) .
+2.	Phân quyền người dùng theo role (USER or ADMIN)
+3.	Trang quản trị có chứ năng : thêm, sửa , xóa ,tìm kiếm 
+4.	Trang người dùng có chức năng giỏ hàng.  
+5.	Sản phầm phải hiển thị theo category.
+6.	ở quản trị xây dựng chức năng thống kế (mặt hàng, số lượng , price của những sản phầm đã bán  ,tổng số tiền thu được).

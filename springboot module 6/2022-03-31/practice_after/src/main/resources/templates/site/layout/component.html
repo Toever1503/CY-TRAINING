@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<header style="background-color: #6661610d;" th:fragment="header">
+    <div th:replace="/component/JQueryToast :: JQueryToast"/>
+    <nav class="navbar navbar-expand-sm navbar-dark container p-0" style="height: 60px;">
+        <div class="h-100 d-flex m-auto">
+            <div class="navbar-brand mr-2" style="width: 300px;height: 100%;background-image: url('https://pngimg.com/uploads/bitcoin/bitcoin_PNG17.png?i=1'); background-size: cover;" href="javascript:void(0)"></div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li th:each="item : ${menuList}" th:class="${'nav-item'+ (item.getValue().size() != 0 ? ' dropdown' : '')}">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" th:href="|/category/${item.getKey().getCatName()}|" th:if="${item.getValue().size() != 0}" th:text="${item.getKey().getCatName()}"/>
+                        <a class="nav-link" th:if="${item.getValue().size() == 0}" th:href="|/category/${item.getKey().CatSlug}|" th:text="${item.getKey().getCatName()}"/>
+
+                        <ul class="dropdown-menu" th:if="${item.getValue().size() != 0}">
+                            <li th:each="subItem : ${item.getValue()}">
+                                <a class="dropdown-item" href="#" th:text="${subItem.getCatName()}" th:href="|/category/${item.getKey().CatSlug}|"/>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        header{
+            border-bottom: 1px solid gainsboro;
+        }
+        header nav a{
+            color: black !important;
+        }
+        header nav ul li{
+            border-left: 1px solid #f3cece;
+        }
+        header nav ul li:hover{
+            transition: ease-in-out 0.3s;
+            border-radius: 5px;
+            background-color: #e3e3e3;
+        }
+    </style>
+</header>
+
+<footer style="background-color: #0dcaf0;" th:fragment="footer">
+    <h3 class="text-center p-2" style="color: cornsilk ;">Powered by CY</h3>
+</footer>
+</body>
+</html>

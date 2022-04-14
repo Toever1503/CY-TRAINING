@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/component/component :: head" />
+<body>
+<div th:replace="/component/component :: JQueryToast"/>
+<header th:replace="/component/component :: site_header" />
+
+<div class="mainBody container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">My Cart</li>
+        </ol>
+    </nav>
+    <div class="cart_content">
+        <table class="table table-hover table-bordered text-center">
+            <h3 class="bg-warning text-white text-bold m-1 d-inline-block" th:if="${session.cart.size == 0}" >Your cart haven't any product!</h3>
+            <thead style="background: azure;">
+            <tr>
+                <th></th>
+                <th>
+                    <span class="title">Product name</span>
+                </th>
+                <th>
+                    <span class="price">Price</span>
+                </th>
+                <th>
+                    <span class="quantity">Quantity</span>
+                </th>
+                <th>
+                    <span>Action</span>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${session.cart}">
+                <td>
+                    <span class="image" style="height: 130px; width: 100px; display: block;margin: 0 auto;"><img style="height: 100%; width: 100%" th:src="${item.getValue().Product.Image}" alt=""></span>
+                </td>
+                <td>
+                    <span class="title" th:text="${item.getValue().Product.Name}"></span>
+                </td>
+                <td>
+                    <span class="price" th:text="|${item.getValue().Product.Price}$|"></span>
+                </td>
+                <td>
+                    <span class="quantity" th:text="${item.getValue().Quantity}"></span>
+                </td>
+                <td>
+                    <a th:href="|/my-cart/delete/${item.getValue().Product.Id}|" class="btn btn-outline-primary">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <a th:if="${session.cart.size != 0}" th:href="|/checkout|" class="btn btn-outline-success mt-2">Checkout</a>
+    </div>
+</div>
+
+
+<footer th:replace="/component/component :: footer" />
+</body>
+</html>

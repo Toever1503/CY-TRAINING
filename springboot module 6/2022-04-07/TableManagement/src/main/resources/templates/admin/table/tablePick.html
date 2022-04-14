@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/component/component::head"/>
+<body>
+<head th:replace="/component/component::header"/>
+<div class='main-content container m-5 p-2 bordered' style='font-size: 14px;'>
+    <div class="">
+        <h3>Table List
+            <button type="button" id="addNew" class="btn btn-primary mb-2" data-bs-toggle="modal"
+                    data-bs-target="#addTable">
+                Add Table
+            </button>
+        </h3>
+    </div>
+    <!-- The add table Modal -->
+    <div class="modal fade" id="addTable">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Table</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/admin/pick_tables/add" id="formDepartment"
+                          method="post">
+                        <input type="text" class="form-control d-none" name="id">
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text">Price</span>
+                            <input type="text" class="form-control" name="price">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text">Status(is open?)</span>
+                            <input class="form-check-input" type="checkbox"name="status">
+                        </div>
+                        <button class="btn btn-outline-primary p-1" >Add</button>
+                        <span type="button" class="btn btn-outline-danger p-1 float-right"
+                              data-bs-dismiss="modal">Close</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The pick table Modal -->
+    <div class="modal fade" id="pickTable">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Table</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form id="formDepartment"
+                          method="post">
+                        <input type="text" class="form-control d-none" name="id">
+                        <input type="text" class="form-control d-none" name="tbl_id">
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text">Customer name</span>
+                            <input type="text" class="form-control" name="cusName">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text">Customer phone</span>
+                            <input type="number" class="form-control" name="cusPhone">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text">Discount</span>
+                            <input type="number" class="form-control" name="discount">
+                        </div>
+
+                        <button class="btn btn-outline-primary p-1" id="form_action">Pick</button>
+                        <span type="button" class="btn btn-outline-danger p-1 float-right"
+                              data-bs-dismiss="modal">Close</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-content row container" style="gap: 5px;">
+        <div class="tableList col-8">
+            <div th:class="|table-item p-2 ${tbl.status != false ? 'unavailable' : 'available'}|"
+                 th:data-choose="${tbl.toJson()}" th:each="tbl: ${tables.getContent()}"
+                 th:text="${tbl.id}">
+            </div>
+
+            <div class="w-100" style="height: fit-content;">
+                <div class="center-page m-auto">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tableInfor col-3 p-2 " style="display: none">
+            <h4 class="text-center tblId"></h4>
+            <p class="tblPrice">
+                <span>Price:</span>
+                <b>Full</b>
+            </p>
+            <p class="tblStatus">
+                <span>Status:</span>
+                <b>Full</b>
+            </p>
+            <p class="timePicker" style="display: none">
+                <span>Timepicker:</span>
+                <b>Full</b>
+            </p>
+            <p class="staff" style="display: none">
+                <span>Handled staff:</span>
+                <b>Full</b>
+            </p>
+            <p>
+                <button class="btn btn-outline-primary p-1 pickBtn">Pick</button>
+                <button class="btn btn-outline-primary p-1 cancelBtn">Cancel</button>
+            </p>
+        </div>
+        <script>
+            jQuery(document).ready(function(){
+                jQuery(($)=>{
+                    $('.pickBtn').click((e)=>{
+                        console.log('pick table')
+                    });
+
+                    $('.cancelBtn').click((e)=>{
+                        console.log('cancel table')
+                    });
+
+                    document.querySelectorAll('.tableList .table-item').forEach(element=>{
+                        element.addEventListener("click", (e)=>{
+                                let data = JSON.parse(e.target.dataset.choose.replaceAll("'", "\""));
+                                $('.tableInfor').show();
+
+                                $('.tableInfor .tblId').text(`Table #${data.id}`);
+                                $('.tableInfor .tblPrice b').text(data.price+'$');
+                                $('.tableInfor .tblStatus b').text(data.status == true ? 'Unavailable' : 'Available');
+
+                                $('.tableInfor .timePicker b').hide();
+                                $('.tableInfor .staff b').hide();
+                                if(data.status == true){
+                                    $('.tableInfor .timePicker b').show().text(data.datePicker);
+                                    // $(e.target).find('.staff b').show().text();
+                                }
+
+                                $('.tableInfor .pickBtn').attr('tbl-tblId',1).click((e)=>{
+                                    console.log('pick table');
+                                    $('#pickTable').modal("show");
+                                    $('#pickTable form').find('.tbl_id').val(data.id);
+                                    $('#pickTable form')[0].reset();
+                                });
+                                $('.tableInfor .cancelBtn').attr('tbl-tblId',1).click((e)=>{
+                                    console.log('cancel table')
+                                    const check = confirm('Are you sure to cancel this table?');
+                                    if(check)
+                                        console.log("delete")
+                                });
+
+                        })
+                    });
+                });
+            });
+        </script>
+    </div>
+</div>
+
+<style>
+    .tableList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+        border: 1px solid gainsboro;
+    }
+
+    .tableList .table-item {
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid green;
+        border-radius: 5px;
+        display: inline-block;
+        font-weight: bold;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .unavailable {
+        background-color: red;
+    }
+
+    .tableList .table-item.available:hover {
+        background-color: yellow;
+    }
+
+    .tableInfor {
+        border: 1px solid gainsboro;
+    }
+</style>
+
+
+</body>
+</html>

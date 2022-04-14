@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/component/component :: head"/>
+<body>
+<div th:replace="/component/component :: JQueryToast"/>
+    <form class="container p-3" th:action="@{/admin/categories}" method="post" th:object="${category}">
+        <h1 class="text-center">Add category</h1>
+        <div class="input-group mb-2">
+            <label class="input-group-text" for="catName">Category Name</label>
+            <input type="text" class="form-control" id="catName" th:field="*{catName}">
+        </div>
+
+        <div class="input-group mb-2">
+            <label class="input-group-text" for="catOrder">Order</label>
+            <input type="number" class="form-control" id="catOrder" th:field="*{catOrder}">
+        </div>
+
+        <div class="input-group mb-2">
+            <label class="input-group-text" for="catOrder">Parent</label>
+            <select class="form-control" name="catParentId" value="0">
+                <option value="0">None</option>
+                 <option th:each="cat : ${listCats}" th:value="${cat.id}" th:text="${cat.catName}" />
+            </select>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-primary">Add</button>
+            <a href="/admin/categories" class="btn btn-secondary">Back</a>
+        </div>
+    </form>
+</body>
+</html>
