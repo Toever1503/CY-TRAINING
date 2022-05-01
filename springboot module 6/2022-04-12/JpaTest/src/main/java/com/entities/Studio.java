@@ -1,6 +1,7 @@
 package com.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -18,7 +19,7 @@ public class Studio implements Serializable {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @JsonBackReference
+    @JsonIgnoreProperties("studios")
     @ManyToMany
     private List<Video> studioVideos;
 

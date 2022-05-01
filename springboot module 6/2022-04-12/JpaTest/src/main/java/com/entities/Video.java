@@ -1,5 +1,6 @@
 package com.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -87,26 +88,27 @@ public class Video implements Serializable {
     @Column(name = "trailer", length = 500)
     private String trailer;
 
-    @JsonManagedReference
+//    @JsonIgnoreProperties("studioVideos")
     @ManyToMany
     @JoinTable(name = "videoandstudio",
             joinColumns = @JoinColumn(name = "video"),
             inverseJoinColumns = @JoinColumn(name = "studio"))
     private List<Studio> studios;
 
-    @JsonManagedReference
-    @ManyToMany
-    @JoinTable(name = "videoandcategory",
-            joinColumns = @JoinColumn(name = "video"),
-            inverseJoinColumns = @JoinColumn(name = "category"))
-    private List<Category> vCategories;
 
-    @JsonManagedReference
-    @ManyToMany
-    @JoinTable(name = "videoandstaff",
-            joinColumns = @JoinColumn(name = "video"),
-            inverseJoinColumns = @JoinColumn(name = "staff"))
-    private List<Staff> vStaffs;
+//    @JsonManagedReference
+//    @ManyToMany
+//    @JoinTable(name = "videoandcategory",
+//            joinColumns = @JoinColumn(name = "video"),
+//            inverseJoinColumns = @JoinColumn(name = "category"))
+//    private List<Category> vCategories;
+//
+//    @JsonManagedReference
+//    @ManyToMany
+//    @JoinTable(name = "videoandstaff",
+//            joinColumns = @JoinColumn(name = "video"),
+//            inverseJoinColumns = @JoinColumn(name = "staff"))
+//    private List<Staff> vStaffs;
 
 
 }

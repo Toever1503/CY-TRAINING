@@ -30,8 +30,8 @@ public class VideoService {
     public Video save(VideoModel videoModel) {
         Video v = toEntity(videoModel);
         v.setStudios(studioRepository.findAllByIdIn(videoModel.getStudios()));
-        v.setVCategories(categoryRepository.findAllByIdIn(videoModel.getVCategories()));
-        v.setVStaffs(staffRepository.findAllByIdIn(videoModel.getVStaffs()));
+//        v.setVCategories(categoryRepository.findAllByIdIn(videoModel.getVCategories()));
+//        v.setVStaffs(staffRepository.findAllByIdIn(videoModel.getVStaffs()));
         return this.videoRepository.save(v);
     }
 
@@ -59,8 +59,8 @@ public class VideoService {
                 .views(video.getViews())
                 .country(video.getCountry())
                 .studios(video.getStudios().stream().map(studio -> studio.getId()).collect(Collectors.toList()))
-                .vCategories(video.getVCategories().stream().map(category -> category.getId()).collect(Collectors.toList()))
-                .vStaffs(video.getVStaffs().stream().map(staff -> staff.getId()).collect(Collectors.toList()))
+//                .vCategories(video.getVCategories().stream().map(category -> category.getId()).collect(Collectors.toList()))
+//                .vStaffs(video.getVStaffs().stream().map(staff -> staff.getId()).collect(Collectors.toList()))
 //                .vTags(video.getVTags().stream().map(tag -> tag.getId()).collect(Collectors.toList()))
                 .build();
     }

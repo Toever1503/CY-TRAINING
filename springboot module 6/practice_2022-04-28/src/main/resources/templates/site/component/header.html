@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light" th:fragment="header">
+    <div class="container">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " type="button" data-bs-toggle="offcanvas" id="show-cart" data-bs-target="#demo"
+                   href="#">My-Cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  sec:authorize="!isAuthenticated()" href="/signin">Login</a>
+                <form th:action="@{/logout}" method="post" sec:authorize="isAuthenticated()">
+                    <input type="submit"  class="nav-link" value="Logout" />
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div th:fragment="userCart" class="offcanvas offcanvas-end" id="demo" style="width: 600px !important;">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">My Cart</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <table id="user-cart" class="table table-hover table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                </th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <p><b>Total</b>: <span class="ml-2" id="total-price"></span></p>
+        <button sec:authorize="isAuthenticated()" type="button" class="btn btn-primary btn-block" id="checkout">
+            Checkout NOW
+        </button>
+        <a sec:authorize="!isAuthenticated()" class="btn btn-primary btn-block" href="/signin">Please login to
+            checkout</a>
+    </div>
+    <script>
+        function addCart(e) {
+            fetch('/cart/add/' + e.dataset.id)
+                .then(res => res.json())
+                .then(res => {
+                    alert('add successfully!')
+                }).catch(err => console.log(err))
+        }
+
+        function removeCart(e) {
+            fetch('/cart/delete/' + e.dataset.id)
+                .then(res => res.json())
+                .then(res => {
+                    if (res.result == 'success')
+                        alert('delete successfully!')
+                }).catch(err => console.log(err))
+        }
+
+        document.querySelector("#show-cart").addEventListener('click', () => {
+            fetch('/cart')
+                .then(res => res.json())
+                .then(res => {
+                    console.log('get cart')
+                    console.log(res)
+                    $('#user-cart tbody .item').empty();
+                    if (res.result == 'success') {
+                        let total = 0;
+                        res.data.forEach(item => {
+                            let pTotal = item.product.price * item.quantity;
+                            total += pTotal;
+                            $('#user-cart tbody').append(`
+                                    <tr class="item">
+                                        <td>${item.product.name}</td>
+                                        <td>${item.price}$</td>
+                                        <td>${item.quantity}</td>
+                                        <td>${pTotal}$</td>
+                                        <td>
+                                            <button class="btn btn-danger" data-id="${item.product.id}" onclick="removeCart(this)">Remove</button>
+                                        </td>
+                                    </tr>
+                                `);
+                            $('#total-price').text(total + '$');
+                        });
+                    }
+                }).catch(err => console.log(err));
+            let checkout = false;
+
+            $('#checkout').click(() => {
+                if (checkout == false) {
+                    checkout = true;
+                    fetch('/cart/checkout')
+                        .then(res => res.json())
+                        .then(res => {
+                            if (res.result == 'success') {
+                                alert('checkout successfully!')
+                                $('#user-cart tbody .item').empty();
+                                $('#total-price').text(0 + '$');
+                            }
+                            checkout = false;
+                        }).catch(err => {
+                        console.log(err);
+                        checkout = false;
+                    });
+                }
+            });
+        });
+    </script>
+</div>
+<!--<div th:fragment="pagination">-->
+<!--    <ul class="pagination">-->
+<!--        <li class="page-item" th:if="${current > 0}"><a class="page-link" th:href="${'?page='+ (page-1)}">Previous</a></li>-->
+<!--        <li class="page-item active"><a class="page-link" href="#" th:text="${page}"></a></li>-->
+<!--        <li class="page-item" th:if="${latestProduct.size != 0 && latestProduct.size != 1}"><a class="page-link">Next</a> </li>-->
+<!--    </ul>-->
+<!--</div>-->
+</body>
+</html>

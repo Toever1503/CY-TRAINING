@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank you</title>
+</head>
+<body>
+<div style='width: 800px; margin: auto'>
+    <h1 style="text-align: center;">Thanks for your orders</h1>
+    <P>Here is list products that you've ordered: </P>
+    <table style="border: 1px solid gainsboro; width: 100%; text-align: center;">
+        <thead>
+        <tr style="background-color: aliceblue; padding: 5px">
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p: ${products}">
+            <td th:text="${p.product.name}"></td>
+            <td th:text="${p.quantity}">f</td>
+            <td th:text="|${p.price}$|">fa</td>
+            <td th:text="|${p.quantity*p.price}$|"></td>
+        </tr>
+        </tbody>
+    </table>
+    <p th:text="|Total: ${total}|"></p>
+</div>
+</body>
+</html>

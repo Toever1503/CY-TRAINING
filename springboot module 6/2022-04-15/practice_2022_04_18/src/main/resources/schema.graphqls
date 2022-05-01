@@ -1,0 +1,92 @@
+#schema{
+#    query: Query
+##    mutation: Mutation
+#}
+type Query{
+    Products(q: String, first: Int = 0, offset: Int = 2): [product]
+    Products(first: Int = 0, offset: Int = 2): [product]
+    Product(id: ID!): product
+
+    Users(q: String, first: Int = 0, offset: Int = 2): [User]
+    Users( first: Int = 0, offset: Int = 2): [User]
+    User(id: ID!): User
+
+    Authority(id: ID!): authority
+    Authorities(q: String, first: Int = 0, offset: Int = 2): [authority]
+    Authorities(first: Int = 0, offset: Int = 2): [authority]
+}
+type Mutation{
+#    product
+    createProduct(product: productInput): product
+    updateProduct(id: ID!, product: productInput): product
+    deleteProduct(id: ID!): Boolean
+
+#    user
+    createUser(user: UserInput): User
+    updateUser(id: ID!, user: UserInput): User
+    deleteUser(id: ID!): Boolean
+
+#    authority
+    createAuthority(authority: authorityInput): authority
+    updateAuthority(id: ID!, authority: authorityInput): authority
+    deleteAuthority(id: ID!): Boolean
+
+}
+
+
+type User{
+    id: ID
+    username: String
+    email: String
+    fullName: String
+    address: String
+    image: String
+    phone: String
+    authorities: [String]
+    userMetas: [userMeta]
+    parent: String
+#    createdDate: Date
+#    lastModifiedDate: Date
+}
+input UserInput{
+    username: String!
+    email: String!
+    password: String!
+    authorities: [Int]
+    userMetas: [userMetaInput]
+    fullName: String
+}
+
+
+type userMeta{
+    metaKey: String
+    metaValue: String
+}
+input userMetaInput{
+    id: ID
+    metaKey: String!
+    metaValue: String!
+}
+
+type product{
+    id: ID
+    name: String
+    description: String
+    price: Float
+    image: String
+}
+input productInput{
+    name: String!
+    description: String!
+    price: Float!
+}
+
+#authority
+
+type authority{
+    id: ID
+    roleName: String
+}
+input authorityInput{
+    roleName: String!
+}

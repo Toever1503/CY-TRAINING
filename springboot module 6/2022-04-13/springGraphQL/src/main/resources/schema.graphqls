@@ -1,0 +1,89 @@
+directive @auth(role : String!) on FIELD_DEFINITION
+
+schema {
+  query: Query
+#  mutation: Mutation
+}
+
+#type Mutation{
+#    InsertOrUpdateVideo(video: VideoModel): Video
+#}
+
+type Query{
+    Videos(page: Int, perPage: Int): [Video]
+    Video(id: ID!): Video
+}
+
+#type PageInfo{
+#    hasPreviousPage: Boolean
+#    hasNextPage: Boolean
+#    totalPage: Int
+#    page: Int
+#    perPage: Int
+#}
+
+#for video entity
+#input VideoModel{
+#    id: ID
+#    title: String
+#    titleJp: String
+#    description: String
+#}
+
+type Video{
+    id: ID
+    title: String
+    titleJp: String
+    description: String @auth(role : "manager")
+    staffs(page: Int!, perPage: Int!): StaffConnection
+#    studios(page: Int!, perPage: Int!, sort: StudioSort): StudioConnection
+}
+
+#for staff entity
+type Staff{
+    id: ID
+    name: String
+}
+
+type StaffConnection{
+    nodes: [Staff]
+#    pageInfo: PageInfo
+}
+#
+#input StaffSort{
+#    direction: Direction!
+#    by: StaffSortBy!
+#}
+#enum StaffSortBy{
+#    ID
+#    NAME
+#}
+#
+##for studio entity
+#type Studio{
+#    id: ID
+#    name: String
+#}
+#
+#type StudioConnection{
+#    nodes: [Studio]
+#    pageInfo: PageInfo
+#}
+#input StudioSort{
+#    direction: Direction!
+#    by: StudioSortBy!
+#}
+#
+#enum StudioSortBy{
+#    ID
+#    NAME
+#}
+#
+##for sort direction
+#interface SortBy{
+#    by: String
+#}
+#enum Direction{
+#    ASC
+#    DESC
+#}

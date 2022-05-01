@@ -1,0 +1,89 @@
+directive @ConnectionSelect(target: String!) on FIELD_DEFINITION
+
+schema {
+    query: Query
+}
+
+
+type Query{
+    video(id: ID!): Video
+    videos(q: String, page: Int!, perPage: Int!): VideoConnection
+}
+type PageInfo{
+    hasNextPage: Boolean
+    hasPreviousPage: Boolean
+    totalPages: Int
+    page: Int
+    perPage: Int
+}
+
+enum Direction{
+    ASC
+    DESC
+}
+
+type Video{
+    id: ID
+    title: String
+    titleJp: String
+    description: String
+    staffs(q: String, page: Int!, perPage: Int!): StaffConnection @ConnectionSelect(target: "StaffConnection")
+    studios(q: String, page: Int!, perPage: Int!): StudioConnection @ConnectionSelect(target: "StudioConnection")
+    characters(q: String, page: Int!, perPage: Int!): CharacterConnection @ConnectionSelect(target: "CharacterConnection")
+}
+input VideoSort {
+    #    by: VideoSortBy
+    direction: Direction
+}
+enum VideoSortBy{
+    id
+    title
+    titleJp
+    description
+}
+type VideoConnection{
+    pageInfo: PageInfo
+    edges: [VideoEdge]
+}
+type VideoEdge{
+    node: Video
+}
+
+#for staff
+type Staff{
+    id: ID
+    name: String
+}
+type StaffConnection{
+    pageInfo: PageInfo
+    edges: [StaffEdge]
+}
+type StaffEdge{
+    node: Staff
+}
+
+#for studio
+type Studio{
+    id: ID
+    name: String
+}
+type StudioConnection{
+    pageInfo: PageInfo
+    edges: [StudioEdge]
+}
+type StudioEdge{
+    node: Studio
+}
+
+#for character
+type Character{
+    id: ID
+    name: String
+}
+type CharacterConnection{
+    pageInfo: PageInfo
+    edges: [CharacterEdge]
+}
+type CharacterEdge{
+    node: Character
+}
