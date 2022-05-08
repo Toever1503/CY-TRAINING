@@ -3,6 +3,7 @@ package com.graphql.query;
 import com.domain.Staff;
 import com.graphql.connection.*;
 import com.repository.StaffRepository;
+import graphql.kickstart.tools.GraphQLMutationResolver;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import graphql.relay.Edge;
 import graphql.schema.DataFetchingEnvironment;
@@ -10,12 +11,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
 
 @Component
-public class StaffQueryResolver implements GraphQLQueryResolver {
+public class StaffQueryResolver implements GraphQLQueryResolver{
 
     private final StaffRepository staffRepository;
 
@@ -40,4 +42,5 @@ public class StaffQueryResolver implements GraphQLQueryResolver {
 
         return new DefaultCustomConnection<Staff>(edges, pageInfo);
     }
+
 }

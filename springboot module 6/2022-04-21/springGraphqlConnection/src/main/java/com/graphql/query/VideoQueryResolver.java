@@ -5,10 +5,13 @@ import com.graphql.connection.*;
 import com.repository.VideoRepository;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import graphql.schema.DataFetchingEnvironment;
+import org.dataloader.DataLoader;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
+
+import java.util.concurrent.CompletableFuture;
 
 @Component
 public class VideoQueryResolver implements GraphQLQueryResolver {
@@ -21,8 +24,16 @@ public class VideoQueryResolver implements GraphQLQueryResolver {
         this.connectionQuery = connectionQuery;
     }
 
-    public Video video(long id, DataFetchingEnvironment env) {
-        return this.videoRepository.findById(id).orElse(null);
+    public CompletableFuture<Video> video(long id, DataFetchingEnvironment env) {
+        try {
+            DataLoader dataLoader = env.getDataLoader("video");
+            return dataLoader.load(id);
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("ended get video with current thread: " + Thread.currentThread().getId());
+        }
+        return null;
     }
 
     public CustomConnection<Video> videos(String q, int page, int perPage, DataFetchingEnvironment env) {

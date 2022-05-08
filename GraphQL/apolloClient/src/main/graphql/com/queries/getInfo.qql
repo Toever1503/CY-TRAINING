@@ -1,0 +1,6 @@
+query GetProductInfo($products: ProductQuery!) {
+    getProducts(products: $products) {
+        opcoId
+        productId
+    }
+}

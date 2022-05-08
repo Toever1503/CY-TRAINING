@@ -1,10 +1,15 @@
 directive @ConnectionSelect(target: String!) on FIELD_DEFINITION
-
+scalar Date
+scalar Long
 schema {
     query: Query
+    mutation: Mutation
 }
 
 
+type Mutation{
+    createStaff(date: Date!): Staff
+}
 type Query{
     video(id: ID!): Video
     videos(q: String, page: Int!, perPage: Int!): VideoConnection
@@ -15,6 +20,7 @@ type PageInfo{
     totalPages: Int
     page: Int
     perPage: Int
+    totalElements: Long
 }
 
 enum Direction{
@@ -27,10 +33,27 @@ type Video{
     title: String
     titleJp: String
     description: String
-    staffs(q: String, page: Int!, perPage: Int!): StaffConnection @ConnectionSelect(target: "StaffConnection")
-    studios(q: String, page: Int!, perPage: Int!): StudioConnection @ConnectionSelect(target: "StudioConnection")
-    characters(q: String, page: Int!, perPage: Int!): CharacterConnection @ConnectionSelect(target: "CharacterConnection")
+    dateCreate: Date
+    dateUpdate: Date
+    staffs(page: PageInput!): StaffConnection
+    #    studios(q: String, page: Int!, perPage: Int!): StudioConnection @ConnectionSelect(target: "StudioConnection")
+    #    characters(q: String, page: Int!, perPage: Int!): CharacterConnection @ConnectionSelect(target: "CharacterConnection")
 }
+
+input PageInput{
+    page: Int!
+    size: Int!
+    sort: Sort
+}
+input SortOrder{
+    direction: Direction!
+    property: String!
+}
+input Sort{
+    orders: [SortOrder]!
+}
+
+
 input VideoSort {
     #    by: VideoSortBy
     direction: Direction

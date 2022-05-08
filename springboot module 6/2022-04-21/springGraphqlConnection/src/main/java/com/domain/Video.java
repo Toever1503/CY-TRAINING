@@ -10,6 +10,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
 
 
 @Entity
@@ -33,18 +35,18 @@ public class Video {
     @Column(name = "description")
     private String description;
 
-    @Transient
-    private CustomConnection<Staff> staffs;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "date_create")
+    private Date dateCreate;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "date_update")
+    private Date dateUpdate;
 
     @Transient
     private CustomConnection<Studio> studios;
 
     @Transient
     private CustomConnection<Character> characters;
-
-    public CustomConnection<Staff> staffs(String q, int page, int perPage) {
-        return null;
-    }
 
     public CustomConnection<Studio> studios(String q, int page, int perPage) {
         return null;
