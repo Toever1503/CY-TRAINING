@@ -14,7 +14,6 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/user")
-@Secured("ROLE_ADMIN")
 public class UserResources {
 
     private final UserService userService;
