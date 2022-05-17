@@ -1,0 +1,45 @@
+learn server
+    + type of server
+        . dedicated server
+        . cloud server
+        . virtual server
+
+    + some server 
+        . web
+        . csdl
+        . email
+        . fpt
+        ...
+learn networking
+    + tcp/ip
+    + tcp is base protocol for almost protocol todat
+    + http/https
+
+linux:
+    + command
+        . cd, ls, cat, pwd
+    + manager user
+        . root user
+        . other users
+    + permission
+        . show permission: ls -l
+        . show hidden file: ls -a
+        . ---/---/--- <=> user/group/everyone
+        . chmod
+    + interact with user
+        . add user 
+        . delete user 
+        . change pass
+        . modify user info
+    + change file/directory possesion
+        . command: chown
+    + software package management
+        . yum
+        . rpm
+        . apt
+    + tar command
+        . options
+    + nginx: 
+        . serve static file 
+        . concept: block server instance
+    
