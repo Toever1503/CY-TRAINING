@@ -1,0 +1,22 @@
+
+
+
+Module 4: Networking
+    + Amazon Virtual Private Cloud (Amazon VPC) is a service that enables you to provision an isolated section of the AWS Cloud. In this isolated section, you can launch resources in a virtual network that you define.
+    
+    + AWS Direct Connect is a service that enables you to establish a dedicated private connection between your data center and VPC.  
+
+    + Amazon CloudFront is a content delivery service. It uses a network of edge locations to cache content and deliver content to customers all over the world.
+
+    + Aws route 54 for dns
+    + VPC
+
+MODULE 5: STORAGE AND DATABASES
+    
+
+
+range exam:
+    Domain 1: Cloud Concepts
+    Domain 2: Security and Compliance
+    Domain 3: Technology
+    Domain 4: Billing and Pricing 

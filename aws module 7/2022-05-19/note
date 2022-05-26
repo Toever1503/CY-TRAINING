@@ -1,0 +1,21 @@
+concept load balancer
+    config nginx load balance
+
+introduce aws load balance servie
+    conig load balance use aws 
+
+
+
+{
+    "version": "1.0",
+    "message": "Login  successfully!",
+    "result": "SUCCESS",
+    "data": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE2NTI5NDg5NTYsImV4cCI6MTY1Mjk1MDc1Nn0.BeO6AO2R8o_UNdXoPQsnVbn0whhwBsskvDqqL9Uk0LFYvcwtvEDxpkOWdaf4GxT8IPMLuAlnXKZrvEqxhM60ZA",
+        "type": "Bearer",
+        "timeValid": 1800,
+        "authorities": [
+            "ADMINISTRATOR"
+        ]
+    }
+}

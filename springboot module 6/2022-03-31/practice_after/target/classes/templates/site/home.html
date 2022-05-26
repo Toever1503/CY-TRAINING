@@ -44,7 +44,6 @@
             <div class="listItems row">
                 <div class="card col-2 p-1 shadow" th:each="product: ${latestProduct}">
                     <span class="badge bg-danger" th:if="${product.Quantity == 0}" th:text="|Sold out! |" style="position: absolute; top: 0; right: 0" />
-
                     <img class="card-img-top" data-id="${product.getId()}"
                          th:src="${product.getImage()}"
                          alt="">

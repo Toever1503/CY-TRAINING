@@ -1,0 +1,42 @@
+variables:
+  TAG_COMMIT: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_NAME:$CI_COMMIT_SHORT_SHA #unix id
+  JAR: "jar"
+  NGINX: "nginx"
+
+stages:
+  - build-jar
+  - deploy
+
+buildJar:
+  stage: build-jar
+  tags:
+    - springboot-dev
+  only:
+    - /^live_[0-9]+(?:.[0-9]+)+$/ # regular expression live_0.0.1, live_0.0.2, live_0.0.3, etc.
+  script:
+    - echo "Building Jar"
+    - mvn clean package -DskipTests #build file jar
+
+    - echo "Build Jar Image" #start build image jar
+    - docker container rm -f spring-boot-app || true
+    - docker image rm -f testmodule || true
+    - docker build -t testmodule:latest . #build image jar
+    - echo "Build Nginx Image" #start build image nginx
+    
+    - docker container rm -f nginx-app || true
+    - docker image rm -f nginx_app || true
+    - docker build -t nginx_app:latest ./nginx #build image nginx
+    - echo "Build Complete"
+
+deploy:
+  stage: deploy
+  tags:
+    - springboot-dev
+  only:
+    - /^live_[0-9]+(?:.[0-9]+)+$/ # regular expression live_0.0.1, live_0.0.2, live_0.0.3, etc.
+  script:
+    - echo "Deploying"
+    # - docker image rm -f nginx-app || true
+    - docker run -dp 9997:9997 --network="host" --name spring-boot-app testmodule:latest
+    - docker run -dp 80:80 --network="host" --name nginx-app nginx_app:latest
+    - echo "Deploy Complete"
