@@ -1,2 +1,0 @@
-window genkey for specific user
-	+ ssh-keygen -t rsa -f C:\Users\haunv\.ssh\vm10 -C haunv1503 -b 2048
