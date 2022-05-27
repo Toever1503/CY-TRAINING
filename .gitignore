@@ -1,2 +1,3 @@
 *.pdf
-/google-cloud/*
+./cloud-google
+./ci-cd./cloud-aws
